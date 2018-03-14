@@ -7584,7 +7584,7 @@ Contains only these fixes cherry-picked from [v1.2.0rc1](#1.2.0rc1).
             HTML:
                 <!-- Are a and b properly escaped here? Is baseUrl
                      controlled by user? -->
-                <iframe src="{{baseUrl}}?a={{a}&b={{b}}">
+                <iframe src="{{baseUrl}}?a={{a}}&b={{b}}">
 
         After:
             JS:
