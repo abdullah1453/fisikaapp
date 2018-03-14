@@ -1,0 +1,185 @@
+<div class="panel-right" ng-controller="collduadController">
+	<header class="page-header">
+	  <!-- BEGIN HEADER INNER -->
+	  <div class="page-header-inner">
+	    <!-- BEGIN HEADER BRAND -->
+	    <div class="page-header-brand" style="width:auto">
+	      <span class="page-logo">
+	    	<span class="app-title"><strong>{{ title }}</strong></span>
+	      </span>
+	    </div>
+	    <!-- END HEADER BRAND -->
+	    <!-- BEGIN TOGGLER QUICK SIDEBAR -->
+	    <a href="#" class="toggler-quick-sidebar">
+	      <i class="glyphicon glyphicon-option-vertical"></i>
+	    </a>
+	    <!-- END TOGGLER QUICK SIDEBAR -->
+	    <!-- BEGIN HEADER MENU -->
+	    <div class="page-header-menu">
+	    	<ul class="nav navbar-nav pull-right">
+		        <li class="dropdown-account">
+					<a ng-click="showSetUp = !showSetUp" class="" aria-haspopup="true" aria-expanded="false">
+						<i class="lnr lnr-cog fa-spin icon-username"></i>
+						<span class="username">Options &nbsp;<i class="fa fa-angle-down"></i></span>
+					</a>
+		        </li>
+		    </ul>
+	    </div>
+	    <!-- END HEADER MENU -->
+	    <div class="play-stop-state">
+		   	<button class="btn btn-rounded btn-dark" ng-click="restartAnim()">Reset</button>
+		    <button class="btn btn-rounded" ng-click="togglePaused()" ng-class="pauseTicker ? 'btn-success' : 'btn-danger'">{{ pauseTicker ? 'play' : 'pause' }}</button>
+	    </div>
+	  </div>
+	  <!-- END HEADER INNER -->
+	</header>
+	<div class="setting-up-content" ng-class="showSetUp ? 'show-set-up' : ''" slim-scroll>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12">				
+					<h3>Ball Yellow / Horizontal</h3>
+					<div class="form-group">
+						<div>
+							<div class="btn btn-primary">Mass <span class="badge">{{ initial[0].mass }} KG</span></div>
+							<div class="btn btn-primary">Vell <span class="badge">{{ initial[0].vX }} M/S</span></div>
+						</div>
+						<br>
+						<rzslider rz-slider-model="initial[0].mass" rz-slider-options="massOpt" rz-slider-precision="1"></rzslider>
+						<rzslider rz-slider-model="initial[0].vX" rz-slider-options="vellOpt"></rzslider>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="divider"></div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12">				
+					<h3>Ball Black / Vertical</h3>
+					<div class="form-group">
+						<div>
+							<div class="btn btn-primary">Mass <span class="badge">{{ initial[1].mass }} KG</span></div>
+							<div class="btn btn-primary">Vell <span class="badge">{{ initial[1].vY }} M/S</span></div>
+						</div>
+						<br>
+						<rzslider rz-slider-model="initial[1].mass" rz-slider-options="massOpt" rz-slider-precision="1"></rzslider>
+						<rzslider rz-slider-model="initial[1].vY" rz-slider-options="vellOpt"></rzslider>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="divider"></div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12">				
+					<h3>Ball Red</h3>
+					<div class="form-group">
+						<div>
+							<div class="btn btn-primary">Mass <span class="badge">{{ initial[2].mass }} KG</span></div>
+							<p></p>
+							<div class="btn btn-primary">Vell X <span class="badge">{{ initial[2].vX }} M/S</span></div>
+							<p></p>
+							<div class="btn btn-primary">Vell Y <span class="badge">{{ initial[2].vY }} M/S</span></div>
+						</div>
+						<br>
+						<rzslider rz-slider-model="initial[2].mass" rz-slider-options="massOpt" rz-slider-precision="1"></rzslider>
+						<rzslider rz-slider-model="initial[2].vX" rz-slider-options="vellOpt"></rzslider>
+						<rzslider rz-slider-model="initial[2].vY" rz-slider-options="vellOpt"></rzslider>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="divider"></div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12">				
+					<h3>Ball Red</h3>
+					<div class="form-group">
+						<div>
+							<div class="btn btn-primary">Mass <span class="badge">{{ initial[3].mass }} KG</span></div>
+							<p></p>
+							<div class="btn btn-primary">Vell X <span class="badge">{{ initial[3].vX }} M/S</span></div>
+							<p></p>
+							<div class="btn btn-primary">Vell Y <span class="badge">{{ initial[3].vY }} M/S</span></div>
+						</div>
+						<br>
+						<rzslider rz-slider-model="initial[3].mass" rz-slider-options="massOpt" rz-slider-precision="1"></rzslider>
+						<rzslider rz-slider-model="initial[3].vX" rz-slider-options="vellOpt"></rzslider>
+						<rzslider rz-slider-model="initial[3].vY" rz-slider-options="vellOpt"></rzslider>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Canvas Here -->
+	<div class="content-container" elastic-coll-duad>
+		<canvas id="collduad" width="811px" height="580px" style="background: #a6aebc;"></canvas>
+		
+		<!-- End of Canvas -->
+		<div class="result-content" ng-class="showResult ? 'show-result' : ''">
+			<a ng-click="showResult = !showResult" class="toggle-show"><i class="lnr" ng-class="showResult ? 'lnr-cross' : 'lnr-upload'"></i></a>
+			<div class="container-fluid">
+				<div class="col-sm-6">
+					<div class="result-text" slim-scroll>
+						<h3>Dialog</h3>
+						<p>Perhatikan ke4 bola yang ada di <em>field</em> tsb. Perhatikan ke4 bola tersebut saat memantul!
+							masing-masing bola mempunyai <strong>Massa</strong> dan <strong>Kecepatan</strong> berbeda. 
+							ke4 bola bergerak diatas <em>Cartesius Field</em>,
+							yang berbeda adalah koordinat <strong>Y</strong> yang semakin kebawah semakin tinggi nilainya.
+						</p>
+						<p>Berapa <strong>Momentum total dari k4 bola tsb</strong>?</p>
+						<p><strong>Diketahui:</strong><br>
+							<div class="col-sm-6"><strong>Bola Kuning</strong><br>
+								<code>M: {{ initial[0].mass }}</code><br>
+								<code>vX: {{ initial[0].vX }}</code><br>
+								<code>vY: {{ initial[0].vY }}</code>
+							</div>
+							<div class="col-sm-6"><strong>Bola Hitam</strong><br>
+								<code>M: {{ initial[1].mass }}</code><br>
+								<code>vX: {{ initial[1].vX }}</code><br>
+								<code>vY: {{ initial[1].vY }}</code>
+							</div>
+							<div class="col-sm-6"><strong>Bola Merah</strong><br>
+								<code>M: {{ initial[2].mass }}</code><br>
+								<code>vX: {{ initial[2].vX }}</code><br>
+								<code>vY: {{ initial[2].vY }}</code>
+							</div>
+							<div class="col-sm-6"><strong>Bola Biru</strong><br>
+								<code>M: {{ initial[3].mass }}</code><br>
+								<code>vX: {{ initial[3].vX }}</code><br>
+								<code>vY: {{ initial[3].vY }}</code>
+							</div>
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="result-text" slim-scroll data-slim-scroll-init="1">
+						<!-- Jawaban soal pertama -->
+						<h3>Jawab</h3>
+						1. Gunakan Rumus kekekalan momentum<br>
+							<ol type="A">
+								<!-- ;angkah 1 -->
+								<li><small>Langkah 1 - Tulis Rumusnya</small><br>
+									<code>M<sub>1</sub> . V<sub>1</sub> + M<sub>2</sub> . V<sub>2</sub> + M<sub>3</sub> . V<sub>3</sub> + M<sub>2</sub> . V<sub>4</sub> </code>
+								</li>
+								<!-- langkah 2 -->
+								<li><small>Langkah 2 - Masukan angkanya</small><br>
+									<code>{{ initial[0].mass }} . {{ initial[0].vX }} + {{ initial[1].mass }} . {{ initial[1].vY }} + {{ initial[2].mass }} . {{ velocity(initial[2].vY, initial[2].vX) }} + {{ initial[3].mass }} . {{ velocity(initial[3].vY, initial[3].vX) }} </code>
+								</li>
+								<!-- langkah 3 -->
+								<li><small>Langkah 3 - Hitung </small><br>
+									<code>Momentum totalnya adalah: {{ (initial[0].mass * velocity(initial[0].vY, initial[0].vX)) + (initial[1].mass * velocity(initial[1].vY, initial[1].vX)) + (initial[2].mass * velocity(initial[2].vY, initial[2].vX)) + (initial[3].mass * velocity(initial[3].vY, initial[3].vX)) }} kg m/s</code>
+								</li>
+							</ol>
+						<br>
+						<div class="well bg-blue text-white">
+							<h3>Note:</h3>
+							<p>Momentum total sebelum dan sesudah tumbukan hasilnya akan tetap, karena gaya gesek ditiadakan.
+								Jika gaya gesek diadakan maka bola akan diperlambat secara linier.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

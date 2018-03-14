@@ -1,0 +1,37 @@
+/*
+ * Media Queries Module
+ * --------------------------------------- 
+ * This Module contain mixin for Responsive Layout
+ *  
+ * link: http://davidwalsh.name/write-media-queries-sass
+ */
+
+@mixin cs-device {
+	@media (max-width: 400px) {
+		@content;
+	}
+}
+
+@mixin xs-device {
+	@media (max-width: 767px) {
+		@content;
+	}
+}
+
+@mixin sm-device {
+	@media (min-width: 768px) and (max-width: 991px) {
+		@content;
+	}
+}
+
+@mixin md-device {
+	@media (min-width: 992px) {
+		@content;
+	}
+}
+
+@mixin lg-device {
+	@media (min-width: 1200px) {
+		@content;
+	}
+}

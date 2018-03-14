@@ -1,0 +1,425 @@
+/*
+ *	Selection
+ */
+
+::-moz-selection {
+    color: $white;
+    background: $red;
+}
+
+::-webkit-selection {
+    color: $white;
+    background: $red;
+}
+
+::-ms-selection {
+    color: $white;
+    background: $red;
+}
+
+::selection {
+    color: $white;
+    background: $red;
+}
+
+/*
+ * General 
+ */
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	padding: 0 !important;
+	margin: 0 !important;
+	font-family: Open Sans, Sans-serif, Arial;
+	font-size: 14px;
+	background-color: $light-4x;
+	color: #727272;
+}
+
+.list-group {
+	> a {
+		font-weight: normal;
+		font-size: 13px;
+	}
+}
+
+/*
+ * Define Typogrphy 
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 700;
+	color: $dark;
+}
+
+h1 {
+	font-size: 22px;
+}
+
+h2 {
+	font-size: 19px;
+}
+
+h3 {
+	font-size: 17px;
+}
+
+h4 {
+	font-size: 14px;
+}
+
+h5 {
+	font-size: 12px;
+}
+
+h6 {
+	font-size: 10px;
+}
+
+/* 
+ * Define Link
+ */
+
+a {
+	@include transition( all .2s );
+	color: $green;
+
+	&:hover,
+	&:focus {
+		color: $green-2x;
+		outline: 0;
+	}
+
+	&.disabled {
+		pointer-events: none;
+		cursor: crosshair;
+	}
+}
+
+/* 
+ * Define Form
+ */
+
+.input-group-biggest {
+	margin-top: 10px;
+
+	.form-control {
+		@include border-radius( 0px );
+		height: 60px;
+		font-size: 20px !important;
+		font-weight: 300;
+		line-height: 22px !important;
+		padding: 18px 20px;
+		border-color: $white;
+		line-height: 22px;
+	}
+
+	.input-group-btn {
+		@include border-radius( 0 5px 5px 0 );
+		height: 60px;
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 30px;
+	}
+
+	.btn-biggest {
+		height: 60px;
+		font-weight: 700;
+	}
+}
+
+.form-control-2x {
+	@include border-radius( 0px );
+	@include box-shadow( none );
+	height: 46px;
+	padding: 14px 10px 13px;
+	margin-bottom: 5px;
+
+	&:focus {
+		@include box-shadow( none );
+		border-color: $green;
+	}
+}
+
+.form-control-ghost {
+	height: 50px;
+	padding: 14px 10px 13px;
+	background-color: transparent;
+	border-color: $dark-4x;
+
+	&:focus {
+		@include box-shadow( none );
+		border-color: $green;
+	}
+}
+
+/* 
+ * Define Button
+ */
+
+.btn {
+	@include border-radius( 0px );
+	position: relative;
+	border: 0;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 1px;
+	color: #fff;
+	border: 2px solid transparent;
+
+	&:focus,
+	&:hover {
+		color: #fff;
+		text-transform: uppercase;
+	}
+
+	&.btn-rounded {
+		@include border-radius( 50px );
+	}
+
+	&.btn-2x {
+		font-size: 14px;
+		font-weight: 300;
+		padding: 14px 28px 13px;
+		line-height: 15px;
+		margin-right: 20px;
+	}
+
+	&.btn-dark {
+		background-color: $dark-4x;
+		border-color: $dark-4x;
+
+		&:hover,
+		&:focus {
+			background-color: $dark-2x;
+			border-color: $dark-2x;
+		}
+
+		&.disable {
+			background-color: $dark;
+			border-color: $dark;
+		}
+	}
+
+	&.btn-primary {
+		background-color: $blue;
+		border-color: $blue;
+
+		&:hover,
+		&:focus {
+			background-color: $blue-2x;
+			border-color: $blue-2x;
+		}
+	}
+
+	&.btn-success {
+		background-color: $green;
+		border-color: $green;
+
+		&:hover,
+		&:focus {
+			background-color: $green-2x;
+			border-color: $green-2x;
+		}
+	}
+
+	&.btn-info {
+		background-color: $blue-sky;
+		border-color: $blue-sky;
+
+		&:hover,
+		&:focus {
+			background-color: $blue-sky-2x;
+			border-color: $blue-sky-2x;
+		}
+	}
+
+	&.btn-warning {
+		background-color: $yellow;
+		border-color: $yellow;
+
+		&:hover,
+		&:focus {
+			background-color: $yellow-2x;
+			border-color: $yellow-2x;
+		}
+	}
+
+	&.btn-danger {
+		background-color: $red;
+		border-color: $red;
+
+		&:hover,
+		&:focus {
+			background-color: $red-2x;
+			border-color: $red-2x;
+		}
+	}
+
+	&.btn-extra {
+		background-color: $orange;
+		border-color: $orange;
+
+		&:hover,
+		&:focus {
+			background-color: $orange-2x;
+			border-color: $orange-2x;
+		}
+	}
+}
+
+/* 
+ * Define Helper
+ */
+
+.overlay {
+	height: 100%;
+	display: block;
+	background: rgba(39, 44, 63, 0.9);
+}
+
+.overlay-screen {
+	display: block;
+	background: rgba(255, 255, 255, 0.8);
+}
+
+.wrap-lg {
+	padding: 120px 0;
+}
+
+.wrap-md {
+	padding: 80px 0;
+}
+
+.wrap-sm {
+	padding: 60px 0;
+}
+
+.wrap-xs {
+	padding: 40px 0;
+}
+
+.top-lg {
+	padding-top: 120px;
+}
+
+.top-md {
+	padding-top: 80px;
+}
+
+.top-sm {
+	padding-top: 60px;
+}
+
+.top-xs {
+	padding-top: 40px;
+}
+
+.bottom-lg {
+	padding-bottom: 120px;
+}
+
+.bottom-md {
+	padding-bottom: 80px;
+}
+
+.bottom-sm {
+	padding-bottom: 60px;
+}
+
+.bottom-xs {
+	padding-bottom: 40px;
+}
+
+.material {
+	@include box-shadow( 1px 2px 1px rgba(0,0,0,.08) );
+}
+
+.no-margin {
+	margin: 0 !important;
+}
+
+.no-padding {
+	padding: 0 !important;
+}
+
+.hold-down-35 {
+	@include xs-device {
+		margin-bottom: 0;
+	}
+	margin-bottom: -35px;
+	z-index: 9;
+}
+
+/* 
+ * Bootstrap Override
+ */
+
+.tooltip-inner {
+  padding: 5px 8px;
+  color: $light;
+  background-color: $dark;
+  border-radius: 2px;
+}
+
+.tooltip.left .tooltip-arrow,
+.tooltip.top .tooltip-arrow,
+.tooltip.top-left .tooltip-arrow,
+.tooltip.top-right .tooltip-arrow,
+.tooltip.right .tooltip-arrow,
+.tooltip.left .tooltip-arrow,
+.tooltip.bottom .tooltip-arrow,
+.tooltip.bottom-left .tooltip-arrow,
+.tooltip.bottom-right .tooltip-arrow {
+	border-left-color: $dark;
+}
+
+/* Auth Tab */
+
+.auth-tab-nav{
+
+	li > a {
+		@include border-radius( 0 );
+		padding: 15px 25px;
+		text-transform: uppercase;
+		color: $dark-3x;
+	}
+
+	li.active > a {
+		color: $dark-3x;
+	}
+}
+
+.auth-tab-content {
+	background-color: $white;
+	padding: 10px 15px 20px;
+	border-width: 0 1px 1px 1px;
+	border-style: solid;
+	border-color: #DDD;
+
+	p {
+		font-size: 14px !important;
+		margin: 15px 0 ;
+		margin-bottom: 8px !important;
+		font-weight: 400;
+	}
+}
+
+h3.sign-in-title {
+	font-size: 18px;
+	line-height: 24px;
+	text-align: center;
+	text-transform: uppercase;
+	color: $dark-3x;
+}

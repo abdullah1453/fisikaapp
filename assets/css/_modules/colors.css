@@ -1,0 +1,419 @@
+/*
+ * Colors Module
+ * --------------------------------------- 
+ * This Module contain variables to use as 
+ * 
+ */
+/*
+ * Main Colors 
+ * This color scheme make the ux balance.
+ */
+/* 
+ * Social Media Colors
+ * Link: https://www.competethemes.com/social-media-colors/
+ */
+/* 
+ * Class for Main Colors
+ */
+/* line 77, ../../../scss/_modules/colors.scss */
+.text-white {
+  color: #ffffff;
+}
+
+/* line 80, ../../../scss/_modules/colors.scss */
+.bg-white {
+  background-color: #ffffff;
+}
+
+/* line 85, ../../../scss/_modules/colors.scss */
+.text-dark {
+  color: #495c72;
+}
+
+/* line 88, ../../../scss/_modules/colors.scss */
+.bg-dark {
+  background-color: #495c72;
+}
+
+/* line 93, ../../../scss/_modules/colors.scss */
+.text-dark-2x {
+  color: #3f4f62;
+}
+
+/* line 96, ../../../scss/_modules/colors.scss */
+.bg-dark-2x {
+  background-color: #3f4f62;
+}
+
+/* line 101, ../../../scss/_modules/colors.scss */
+.text-dark-3x {
+  color: #364150;
+}
+
+/* line 104, ../../../scss/_modules/colors.scss */
+.bg-dark-3x {
+  background-color: #364150;
+}
+
+/* line 109, ../../../scss/_modules/colors.scss */
+.text-dark-4x {
+  color: #2B3643;
+}
+
+/* line 112, ../../../scss/_modules/colors.scss */
+.bg-dark-4x {
+  background-color: #2B3643;
+}
+
+/* line 117, ../../../scss/_modules/colors.scss */
+.text-dark-5x {
+  color: #212933;
+}
+
+/* line 120, ../../../scss/_modules/colors.scss */
+.bg-dark-5x {
+  background-color: #212933;
+}
+
+/* line 125, ../../../scss/_modules/colors.scss */
+.text-dark-6x {
+  color: #171d24;
+}
+
+/* line 128, ../../../scss/_modules/colors.scss */
+.bg-dark-6x {
+  background-color: #171d24;
+}
+
+/* line 133, ../../../scss/_modules/colors.scss */
+.text-light {
+  color: #f8fafd;
+}
+
+/* line 136, ../../../scss/_modules/colors.scss */
+.bg-light {
+  background-color: #f8fafd;
+}
+
+/* line 141, ../../../scss/_modules/colors.scss */
+.text-light-2x {
+  color: #f0f3f4;
+}
+
+/* line 144, ../../../scss/_modules/colors.scss */
+.bg-light-2x {
+  background-color: #f0f3f4;
+}
+
+/* line 149, ../../../scss/_modules/colors.scss */
+.text-light-3x {
+  color: #e5e9ec;
+}
+
+/* line 152, ../../../scss/_modules/colors.scss */
+.bg-light-3x {
+  background-color: #e5e9ec;
+}
+
+/* line 157, ../../../scss/_modules/colors.scss */
+.text-light-4x {
+  color: #dadfe4;
+}
+
+/* line 160, ../../../scss/_modules/colors.scss */
+.bg-light-4x {
+  background-color: #dadfe4;
+}
+
+/* line 165, ../../../scss/_modules/colors.scss */
+.text-light-5x {
+  color: #ced6db;
+}
+
+/* line 168, ../../../scss/_modules/colors.scss */
+.bg-light-5x {
+  background-color: #ced6db;
+}
+
+/* line 173, ../../../scss/_modules/colors.scss */
+.text-light-6x {
+  color: #c3ccd3;
+}
+
+/* line 176, ../../../scss/_modules/colors.scss */
+.bg-light-6x {
+  background-color: #c3ccd3;
+}
+
+/* line 181, ../../../scss/_modules/colors.scss */
+.text-gray {
+  color: #a6aebc;
+}
+
+/* line 184, ../../../scss/_modules/colors.scss */
+.bg-gray {
+  background-color: #a6aebc;
+}
+
+/* line 189, ../../../scss/_modules/colors.scss */
+.text-gray-2x {
+  color: #9ba4b3;
+}
+
+/* line 192, ../../../scss/_modules/colors.scss */
+.bg-gray-2x {
+  background-color: #9ba4b3;
+}
+
+/* line 197, ../../../scss/_modules/colors.scss */
+.text-gray-3x {
+  color: #8f9aab;
+}
+
+/* line 200, ../../../scss/_modules/colors.scss */
+.bg-gray-3x {
+  background-color: #8f9aab;
+}
+
+/* line 205, ../../../scss/_modules/colors.scss */
+.text-gray-4x {
+  color: #8490a2;
+}
+
+/* line 208, ../../../scss/_modules/colors.scss */
+.bg-gray-4x {
+  background-color: #8490a2;
+}
+
+/* line 213, ../../../scss/_modules/colors.scss */
+.text-gray-5x {
+  color: #79869a;
+}
+
+/* line 216, ../../../scss/_modules/colors.scss */
+.bg-gray-5x {
+  background-color: #79869a;
+}
+
+/* line 221, ../../../scss/_modules/colors.scss */
+.text-gray-6x {
+  color: #6e7c92;
+}
+
+/* line 224, ../../../scss/_modules/colors.scss */
+.bg-gray-6x {
+  background-color: #6e7c92;
+}
+
+/* line 229, ../../../scss/_modules/colors.scss */
+.text-black {
+  color: #666666;
+}
+
+/* line 232, ../../../scss/_modules/colors.scss */
+.bg-black {
+  background-color: #666666;
+}
+
+/* line 237, ../../../scss/_modules/colors.scss */
+.text-black-2x {
+  color: #333333;
+}
+
+/* line 240, ../../../scss/_modules/colors.scss */
+.bg-black-2x {
+  background-color: #333333;
+}
+
+/* line 245, ../../../scss/_modules/colors.scss */
+.text-red {
+  color: #f35958;
+}
+
+/* line 248, ../../../scss/_modules/colors.scss */
+.bg-red {
+  background-color: #f35958;
+}
+
+/* line 253, ../../../scss/_modules/colors.scss */
+.text-red-2x {
+  color: #f14140;
+}
+
+/* line 256, ../../../scss/_modules/colors.scss */
+.bg-red-2x {
+  background-color: #f14140;
+}
+
+/* line 261, ../../../scss/_modules/colors.scss */
+.text-green {
+  color: #44B6AE;
+}
+
+/* line 264, ../../../scss/_modules/colors.scss */
+.bg-green {
+  background-color: #44B6AE;
+}
+
+/* line 269, ../../../scss/_modules/colors.scss */
+.text-green-2x {
+  color: #3EA7A0;
+}
+
+/* line 272, ../../../scss/_modules/colors.scss */
+.bg-green-2x {
+  background-color: #3EA7A0;
+}
+
+/* line 277, ../../../scss/_modules/colors.scss */
+.text-blue {
+  color: #0090d9;
+}
+
+/* line 280, ../../../scss/_modules/colors.scss */
+.bg-blue {
+  background-color: #0090d9;
+}
+
+/* line 285, ../../../scss/_modules/colors.scss */
+.text-blue-2x {
+  color: #007fc0;
+}
+
+/* line 288, ../../../scss/_modules/colors.scss */
+.bg-blue-2x {
+  background-color: #007fc0;
+}
+
+/* line 293, ../../../scss/_modules/colors.scss */
+.text-blue-sky {
+  color: #00c6d9;
+}
+
+/* line 296, ../../../scss/_modules/colors.scss */
+.bg-blue-sky {
+  background-color: #00c6d9;
+}
+
+/* line 301, ../../../scss/_modules/colors.scss */
+.text-blue-sky-2x {
+  color: #00afc0;
+}
+
+/* line 304, ../../../scss/_modules/colors.scss */
+.bg-blue-sky-2x {
+  background-color: #00afc0;
+}
+
+/* line 309, ../../../scss/_modules/colors.scss */
+.text-purple {
+  color: #8775a7;
+}
+
+/* line 312, ../../../scss/_modules/colors.scss */
+.bg-purple {
+  background-color: #8775a7;
+}
+
+/* line 317, ../../../scss/_modules/colors.scss */
+.text-purple-2x {
+  color: #79659d;
+}
+
+/* line 320, ../../../scss/_modules/colors.scss */
+.bg-purple-2x {
+  background-color: #79659d;
+}
+
+/* line 325, ../../../scss/_modules/colors.scss */
+.text-yellow {
+  color: #f9ba46;
+}
+
+/* line 328, ../../../scss/_modules/colors.scss */
+.bg-yellow {
+  background-color: #f9ba46;
+}
+
+/* line 333, ../../../scss/_modules/colors.scss */
+.text-yellow-2x {
+  color: #f8b12d;
+}
+
+/* line 336, ../../../scss/_modules/colors.scss */
+.bg-yellow-2x {
+  background-color: #f8b12d;
+}
+
+/* line 341, ../../../scss/_modules/colors.scss */
+.text-orange {
+  color: #ff5722;
+}
+
+/* line 344, ../../../scss/_modules/colors.scss */
+.bg-orange {
+  background-color: #ff5722;
+}
+
+/* line 349, ../../../scss/_modules/colors.scss */
+.text-orange-2x {
+  color: #ff4408;
+}
+
+/* line 352, ../../../scss/_modules/colors.scss */
+.bg-orange-2x {
+  background-color: #ff4408;
+}
+
+/* 
+ * Override Bootstrap colors
+ */
+/* line 360, ../../../scss/_modules/colors.scss */
+.text-primary {
+  color: #0090d9;
+}
+
+/* line 363, ../../../scss/_modules/colors.scss */
+.bg-primary {
+  background-color: #0090d9;
+}
+
+/* line 367, ../../../scss/_modules/colors.scss */
+.text-success {
+  color: #44B6AE;
+}
+
+/* line 370, ../../../scss/_modules/colors.scss */
+.bg-success {
+  background-color: #44B6AE;
+}
+
+/* line 374, ../../../scss/_modules/colors.scss */
+.text-info {
+  color: #00c6d9;
+}
+
+/* line 377, ../../../scss/_modules/colors.scss */
+.bg-info {
+  background-color: #00c6d9;
+}
+
+/* line 381, ../../../scss/_modules/colors.scss */
+.text-warning {
+  color: #f9ba46;
+}
+
+/* line 384, ../../../scss/_modules/colors.scss */
+.bg-warning {
+  background-color: #f9ba46;
+}
+
+/* line 388, ../../../scss/_modules/colors.scss */
+.text-danger {
+  color: #f35958;
+}
+
+/* line 391, ../../../scss/_modules/colors.scss */
+.bg-danger {
+  background-color: #f35958;
+}

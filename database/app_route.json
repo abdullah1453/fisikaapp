@@ -1,0 +1,108 @@
+[
+   {
+       "name": "cover",
+       "title": "Applikasi Fisika berbasis modern web",
+       "url": "/",
+       "data": {
+          "content" : "<h2>Cover</h2><p>FisikaApp adalah aplikasi fisika yang dibuat kelompok satu sebagai hasil dari perkembangan belajar mengenai bab momentum, impuls, dan tumbukan atau bab 1.</p><p>Pembangunan aplikasi ini dekerjakan oleh 5 orang anggota yaitu:</p><strong>1. Ihsan Septian</strong><br><strong>2. Hadi Ubaidilah</strong><br><strong>3. C Cecep Supriyatna</strong><br><strong>4. Firman Iskandar</strong><br><strong>5. Yasintya</strong>",
+          "instruction": "instr here"
+        },
+       "templateUrl": "app/components/cover/coverView.html"
+    },
+    {
+       "name": "intro",
+       "title": "Kata Pengantar",
+       "url": "/intro",
+       "data": {
+          "content" : "<h2>Pendahuluan</h2><p>FisikaApp adalah aplikasi fisika yang dibuat kelompok satu sebagai hasil dari perkembangan belajar mengenai bab momentum, impuls, dan tumbukan atau bab 1.</p><p>Pembangunan aplikasi ini dekerjakan oleh 5 orang anggota yaitu:</p><strong>1. Ihsan Septian</strong><br><strong>2. Hadi Ubaidilah</strong><br><strong>3. C Cecep Supriyatna</strong><br><strong>4. Firman Iskandar</strong><br><strong>5. Yasintya</strong>",
+          "instruction": "instr here"
+        },
+       "templateUrl": "app/components/intro/introView.html"
+    },
+    {
+       "name": "momentum",
+       "title": "Bab I Momentum",
+       "url": "/momentum",
+       "data": {
+          "content" : "<h2>Momentum</h2><p>Momentum dapat didefinisikan sebagai perkalian antara massa benda dengan kecepatan benda tersebut. Ia merupakan besaran turunan dari massa, panjang, dan waktu. Momentum adalah besaran turunan yang muncul karena ada benda bermassa yang bergerak. Dalam fisika besaran turunan ini dilambangkan dengan huruf “P”.</p><p><strong>Rumus momentum adalah</strong><br><code>P = m . V</code></p><p><strong>Hukum kekekalan Momentum adalah</strong><br><code>m<sub>1</sub>.v<sub>1</sub> + m<sub>2</sub>.v<sub>2</sub> = m<sub>1</sub>.v<sub>1</sub>'' + m<sub>2</sub>.v<sub>2</sub>'</code></p>",
+          "instruction": " "
+        },
+       "templateUrl": "app/components/momentum/momentumView.html"
+    },
+    {
+       "name": "impuls",
+       "title": "Bab II Impuls",
+       "url": "/impuls",
+       "data": {
+          "content" : "<h2>Impuls</h2><p>Impuls adalah peristiwa gaya yang bekerja pada benda dalam waktu hanya sesaat. Atau Impuls adalah peristiwa bekerjanya gaya dalam waktu yang sangat singkat. Contoh dari kejadian impuls adalah peristiwa seperti bola ditendang, bola tenis dipukul karena pada saat tendangan dan pukulan, gaya yang bekerja sangat singkat.</p><p><strong>Rumusnya adalah: </strong><br><code>I = F Δt</code></p>",
+          "instruction": "instr here"
+        },
+       "templateUrl": "app/components/impuls/impulsView.html"
+    },
+    {
+       "name": "collision",
+       "title": "Bab III Tumbukan",
+       "url": "/collision",
+       "data": {
+          "content" : "<h2>The Judul</h2><p>Tumbukan merupakan peristiwa bertemunya dua buah benda yang bergerak. Saat tumbukan selalau berlaku hukum kekekalan momentum tapi tidak selalu berlaku hukum kekekalan energi kinetik. Mungkin sebagian energi kinetik diubah menjadi energi panas akibat adanya tumbukan. Dikenal 3 jenis tumbukan.</p><strong>1. Tumbukan Lenting Sempurna</strong><br><code>V1 + V1' = V2 + V2'</code><br><strong>2. Tumbukan lenting Sebagian</strong><br><code>eV1 + V1 = eV2 + V2</code><br><strong>3. Tumbukan tidak lenting sama sekali</strong><br><code> m1V1 + m2V2 =(m1+m2)V'</code>",
+          "instruction": "instr here"
+        },
+       "templateUrl": "app/components/collision/collisionView.html"
+    },
+    {
+       "name": "inelasticcollision1d",
+       "title": "Tumbukan tak lenting 1 dimensi",
+       "url": "/inelasticcollision1d",
+       "data": {
+          "content" : "<h2>Tumbukan tak lenting 1 dimensi</h2><p>Tumbukan tidak lenting 1 dimensi adalah tumbukan yang terjadi jika kedua benda saling bertumbukan diatas garis linear atau hanya pada koordinat X dalam kordinat kartesius. dikatakan tidak lenting karena setelah terjadi tumbukan kedua benda akan menjadi satu dan melaju dengan momentum yang sama dan tidak lenting/memantul</p><p>Contohnya adalah tumbukan antara 2 buah kereta yang melaju pada jalur/rel yang sama</p><p><strong>Rumus Tumbukan lenting 1 dimensi</strong><br><code>M1 . V1 + M2 . V2 = (M1 + M2) . V'</code></p>",
+          "instruction": "<h3>01</h3><p>Buka panel <i class='lnr lnr-cog'></i> options di pojok kanan atas.</p><h3>02</h3><p>Setelah terbuka lalu setting sesuka anda, lalu klik tombol <small>play</small></p><h3>02</h3><p>Maka hasilnya dapat dilihat dengan klik pada tombol <i class='lnr lnr-upload'></i></p>"
+        },
+       "templateUrl": "app/components/inelasticCollision1D/inelasticCollision1DView.html",
+       "deps": [
+            "app/components/inelasticCollision1D/inelasticCollision1DController.js",
+            "app/components/inelasticCollision1D/inelasticCollision1DDirective.js"
+       ]
+    },
+    {
+       "name": "inelasticcollision2d",
+       "title": "Tumbukan tak lenting 2 dimensi",
+       "url": "/inelasticcollision2d",
+       "data": {
+          "content" : "<h2>Tumbukan tak lenting 2 dimensi</h2><p>Tumbukan tidak lenting 2 dimensi adalah tumbukan yang terjadi jika kedua benda saling bertumbukan diatas koordinat x dan y atau salah satu objek berada disumbu x dan yang lain berada disumbu Y. dikatakan tidak lenting karena setelah terjadi tumbukan kedua benda akan menjadi satu dan melaju dengan momentum yang sama dan tidak lenting/memantul</p><p>Contohnya adalah tumbukan antara 2 buah roket, rocket pertama melaju pada koordinat X ke arah barat dan yang satu melaju pada koordinat Y ke arah utara.</p><p><strong>Rumus Tumbukan lenting 2 dimensi</strong><br><code>V<sub>12</sub>' = &#8730;(P<sub>1</sub><sup>2</sup> + P<sub>2</sub><sup>2</sup>) / (m<sub>1</sub> + m<sub>2</sub>)</code><br><small>untuk mencari rotasi setelah tumbukan gunakan rumus</small><br><code>tan<sup>-1</sup>(P<sub>y</sub> / P<sub>x</sub>)</code></p>",
+          "instruction": "<h3>01</h3><p>Buka panel <i class='lnr lnr-cog'></i> options di pojok kanan atas.</p><h3>02</h3><p>Setelah terbuka lalu setting sesuka anda, lalu klik tombol <small>play</small></p><h3>02</h3><p>Maka hasilnya dapat dilihat dengan klik pada tombol <i class='lnr lnr-upload'></i></p>"
+        },
+       "templateUrl": "app/components/inelasticCollision2D/inelasticCollision2DView.html",
+       "deps": [
+            "app/components/inelasticCollision2D/inelasticCollision2DController.js",
+            "app/components/inelasticCollision2D/inelasticCollision2DDirective.js"
+       ]
+    },
+    {
+       "name": "elasticcollision1d",
+       "title": "Tumbukan lenting 1 dimensi",
+       "url": "/elasticcollision1d",
+       "data": {
+          "content" : "<h2>Tumbukan lenting 1 dimensi</h2><p>Tumbukan lenting 1 dimensi adalah tumbukan yang terjadi pada 2 buah objeck yang berada pada sumbu yang sama pada bidang kartesius dan akan mengalami lenting/pantul juga pada sumbu yang sama.</p><p> kejadian ini terjadi tepat seperti hukum Newton III yang berbunyi <em>'Ketika suatu benda memberikan gaya pada benda kedua, benda kedua tersebut memberikan gaya yang sama besar tetapi berlawanan arah terhadap benda pertama.'</em></p><p> Tumbukan lenting 1 dimensi juga mencangkup tumbukan lenting sempurna dan sebagian.</p><p><strong>Rumus mencari V' setelah terjadi tumbukan</strong><br><br><img src='assets/img/formula/elcol.png'><br><img src='assets/img/formula/elcol.png'></p>",
+          "instruction": "<h3>01</h3><p>Buka panel <i class='lnr lnr-cog'></i> options di pojok kanan atas.</p><h3>02</h3><p>Setelah terbuka lalu setting sesuka anda, lalu klik tombol <small>play</small></p><h3>02</h3><p>Maka hasilnya dapat dilihat dengan klik pada tombol <i class='lnr lnr-upload'></i></p>"
+        },
+       "templateUrl": "app/components/elasticCollision1D/elasticCollision1DView.html",
+       "deps": [
+            "app/components/elasticCollision1D/elasticCollision1DController.js",
+            "app/components/elasticCollision1D/elasticCollision1DDirective.js"
+       ]
+    },
+    {
+       "name": "elasticcollision2d",
+       "title": "Tumbukan lenting 2 dimensi",
+       "url": "/elasticcollision2d",
+       "data": {
+          "content" : "<h2>Tumbukan lenting 2 dimensi</h2><p>Tumbukan lenting 1 dimensi adalah tumbukan yang terjadi pada 2 buah objeck yang berada pada sumbu yang berbeda pada bidang kartesius dan mengalami lenting/pantul ke arah acak yang dapat di prediksi. Tumbukan lenting 1 dimensi juga mencangkup tumbukan lenting sempurna dan sebagian.</p><p><strong>Rumus mencari V' setelah terjadi tumbukan</strong><br><br><img src='assets/img/formula/elcol.png'><br><img src='assets/img/formula/elcol.png'><br><small>Untuk menghitung derajat rotasi setelah terjadi tumbukan</small><code>tan<sup>-1</sup>(P<sub>y</sub> / P<sub>x</sub>)</code></p>",
+          "instruction": "<h3>01</h3><p>Buka panel <i class='lnr lnr-cog'></i> options di pojok kanan atas.</p><h3>02</h3><p>Setelah terbuka lalu setting sesuka anda, lalu klik tombol <small>play</small></p><h3>02</h3><p>Maka hasilnya dapat dilihat dengan klik pada tombol <i class='lnr lnr-upload'></i></p>"
+        },
+       "templateUrl": "app/components/elasticCollision2D/elasticCollision2DView.html",
+       "deps": [
+            "app/components/elasticCollision2D/elasticCollision2DController.js",
+            "app/components/elasticCollision2D/elasticCollision2DDirective.js"
+       ]
+    }
+]

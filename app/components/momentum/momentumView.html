@@ -1,0 +1,75 @@
+<div class="right-container" slim-scroll>
+	<div id="carousel" class="carousel slide" data-ride="carousel">
+	    <!-- Wrapper for slides -->
+	    <div class="carousel-inner" role="listbox">
+	        <div class="item active bg-icon-red">
+	        	<div class="carousel-caption">
+		            <h2 class="text-white text-left" data-animation="animated jello">Definisi Momentum</h2>
+		            <p class="text-left" data-animation="animated fadeIn">Momentum dapat didefinisikan sebagai perkalian antara massa benda dengan kecepatan benda tersebut. Momentum merupakan besaran turunan dari massa, panjang, dan waktu. Momentum adalah besaran turunan yang muncul karena ada benda bermassa yang bergerak. Dalam fisika besaran turunan ini dilambangkan dengan huruf “P”. </p>
+	            </div>
+	        </div>
+	        <div class="item bg-icon-red">
+	            <div class="carousel-caption">
+	                <h2 class="text-white text-left" data-animation="animated jello">Rumus Momentum</h2>
+		            <p class="text-left" data-animation="animated fadeIn">Setiap benda bergerak tentu memiliki masa dan kecepatan, momentum adalah hasil kali dari masa dan kecepatan. Dilambangkan dengan rumus:<br></p>
+		            <h4><code>P = m . V</code></h4>
+		            <h5 class="text-left">
+		            	<code>P = Momentum</code><br>
+		            	<code>m = Massa</code><br>
+		            	<code>V = Velocity/Kecepatan</code>
+		            </h5>
+	            </div>
+	        </div>
+	        <div class="item bg-icon-red">
+	            <div class="carousel-caption">
+	                <h2 class="text-white text-left" data-animation="animated jello">Contoh</h2>
+		            <p class="text-left" data-animation="animated fadeIn">Jika Mobil A dengan massa <strong><input class="text-dark" style="width:45px" type="number" ng-model="momentumMass" ng-init="100"> kg</strong> Melaju
+		            	dengan kecepatan <strong><input class="text-dark" style="width:45px" type="number" ng-model="momentumVell" value="80"> m/s</strong> maka berapakah momentumnya?
+		            </p>
+		            <h4 class="text-left"><code>P = {{ momentumMass }} kg . {{ momentumVell }} m/s</code></h4>
+		            <h4 class="text-left"><code>P = {{ momentumMass * momentumVell }} kg m/s</code></h4>
+	            </div>
+	        </div>
+	        <div class="item bg-icon-red">
+	            <div class="carousel-caption">
+	                <h2 class="text-white" data-animation="animated jello">Kesimpulan</h2>
+		            <p data-animation="animated fadeIn">Dari rumus momentum di atas dapat disimpulkan momentum suatu benda akan semakin besar jika massa dan kecepatannya semakin bear. Ini juga berlaku sebaliknya, semakin kecil massa atau kecepatan suatu benda maka akan semakin kecil pula momentumnya.</p>
+	            </div>
+	        </div>
+	        <div class="item bg-icon-red">
+	            <div class="carousel-caption">
+	                <h2 class="text-white text-left" data-animation="animated jello">Hukum Kekekalan Momentum</h2>
+		            <p class="text-left" data-animation="animated fadeIn">Ilmu fisika mengenal yang namanya hukum kekalan momentum yang berbunyi</p>
+					<h6 class="text-white"><em>“Momentum sebelum dan sesudah tumbukan akan selalu sama”</em></h6>
+	            </div>
+	        </div>
+	        <div class="item bg-icon-red">
+	            <div class="carousel-caption">
+	                <h2 class="text-white text-left" data-animation="animated jello">Hukum Kekekalan Momentum</h2>
+		            <p class="text-left">Misalkan ada dua benda yang memiliki kecepatan dan massa masing-masing bertumbukan dan setelah tumbukan masing-masing benda  mempunyai kecepatan yang berbeda maka menurut hukum kekekalan momentum</p>
+		            <h6><code>M<sub>1</sub>.V<sub>1</sub> + M<sub>2</sub>.V<sub>2</sub> = M<sub>1</sub>.V<sub>1</sub>' + M<sub>2</sub>.V<sub>2</sub>'</code></h6>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+</div>
+<div class="link-nav">
+	<table>
+		<tr>
+			<td rowspan="2">
+				<a class="left" href="#carousel" data-slide="prev">&nbsp;&nbsp;</a>
+			</td>
+			<td>
+				<a class="top disabled" href="#">&nbsp;&nbsp;</a>
+			</td>
+			<td rowspan="2">
+				<a class="right" href="#carousel" data-slide="next">&nbsp;&nbsp;</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a class="bottom disabled" href="#">&nbsp;&nbsp;</a>
+			</td>
+		</tr>
+	</table>
+</div>

@@ -1,0 +1,60 @@
+<div class="right-container" slim-scroll>
+	<div id="carousel" class="carousel slide" data-ride="carousel">
+	    <!-- Wrapper for slides -->
+	    <div class="carousel-inner" role="listbox">
+	        <div class="item active bg-icon-blue">
+	        	<div class="carousel-caption">
+		            <h2 class="text-white text-left" data-animation="animated jello">Mengenal Impuls</h2>
+		            <p class="text-left" data-animation="animated fadeIn">Perhatikanlah ketika pesepak bola menendang bola pasti terjadi kontak kaki dengan bola, saat itu pula gaya dari kaki akan bekerja pada bola dalam tempo atau waktu yang sangat singkat. Bekerjanya gaya tersebut terhadap bola dalam waktu yang sangat singkat itulah yang disebut impuls. Lebih sederhananya, impuls adalah perkalian gaya (F) dengan selang waktu (t).</p>
+	            </div>
+	        </div>
+	        <div class="item bg-icon-blue">
+	            <div class="carousel-caption">
+	                <h2 class="text-white text-left" data-animation="animated jello">Rumus Impuls</h2>
+		            <p class="text-left" data-animation="animated fadeIn">Impuls bekerja di awal sehingga membuat sebuah benda bergerak dan mempunyai momentum. Secara matematis impuls dapat dirumuskan:<br></p>
+		            <h4><code>I = F Δt</code></h4>
+		            <h5 class="text-left">
+		            	<code>I = Impuls</code><br>
+		            	<code>F = Gaya</code><br>
+		            	<code>Δt = Selang waktu</code>
+		            </h5>
+	            </div>
+	        </div>
+	        <div class="item bg-icon-blue">
+	            <div class="carousel-caption">
+	                <h2 class="text-white text-left" data-animation="animated jello">Contoh</h2>
+		            <p class="text-left" data-animation="animated fadeIn">Lionel messi mengambil tendangan bebas tepat di garis area pinalti lawan. Jika ia menendang dengan gaya <strong><input class="text-dark" style="width:45px" type="number" ng-model="momentumMass" ng-init="100"> N</strong> dan kakinya bersentuhan dengan bola dalam waktu <strong><input class="text-dark" style="width:45px" type="number" ng-model="momentumVell" value="80"> sekon</strong> Hitunglah berapa besar impuls yang terjadi!
+		            </p>
+		            <h4><code>I = {{ momentumMass }} N . {{ momentumVell }} s</code></h4>
+		            <h4><code>I = {{ momentumMass * momentumVell }} Nt</code></h4>
+	            </div>
+	        </div>
+	        <div class="item bg-icon-blue">
+	            <div class="carousel-caption">
+	                <h2 class="text-white" data-animation="animated jello">Kesimpulan</h2>
+		            <p data-animation="animated fadeIn">Dari rumus impuls di atas dapat disimpulkan impuls suatu benda akan semakin besar jika gaya yang diberikan semakin besar dan selang waktunya juga lama. Ini juga berlaku sebaliknya, semakin kecil gaya dan semakin pendek selang waktunya maka akan semakin kecil pula impulsnya.</p>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+</div>
+<div class="link-nav">
+	<table>
+		<tr>
+			<td rowspan="2">
+				<a class="left" href="#carousel" data-slide="prev">&nbsp;&nbsp;</a>
+			</td>
+			<td>
+				<a class="top disabled" href="#">&nbsp;&nbsp;</a>
+			</td>
+			<td rowspan="2">
+				<a class="right" href="#carousel" data-slide="next">&nbsp;&nbsp;</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a class="bottom disabled" href="#">&nbsp;&nbsp;</a>
+			</td>
+		</tr>
+	</table>
+</div>

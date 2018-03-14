@@ -1,0 +1,147 @@
+// User API https://api.myjson.com/bins/4rrmo
+
+{
+	"users"	: [
+		{
+			"id" 				: 111122,
+			"username"			: "julia14",
+			"password"			: "123456",
+			"first_name"		: "julia",
+			"last_name"			: "makudiva",
+			"last_course"		: "10/11/2015",
+			"complete_course" 	: [
+				{
+					"id"			: 1,
+					"name"			: "english grammar",
+					"complete_at"	: "10/12/2015",
+					"last_seen_at"	: "10/12/2015"
+					// banyak chapter
+				}
+			],
+			"uncomplete_coures" : [
+				/* ==============================
+					FISIKA DASAR 1
+				 ================================ */
+				{
+					"id"			: 2,
+					"name"			: "fisika 1",
+					"complete_at" 	: null,
+					"last_seen_at"	: "25/11/2015",
+					"data"			: [
+						/*
+						 * Bab Pengenalan Bab(Chapter)
+						 */
+						{
+							"chapter_id" 	: 1,
+							"chapter_name" 	: "Pengenalan",
+							"data"		 	: [
+								// Presentasi
+								{
+									"sub_chapter_id" 	: 1.1,
+									"sub_chapter_name" 	: "presentation",
+									"sub_chapter_status": 1 // 1 berarti complete/seleasi
+								},
+								// Implementasi
+								{
+									"sub_chapter_id" 	: 1.2,
+									"sub_chapter_name" 	: "Impementaasi",
+									"sub_chapter_status": 1
+								}
+							]
+						},
+						/*
+						 * Bab Momentum Impuls
+						 */
+						{
+							"chapter_id"	: 2,
+							"chapter_name"	: "Momentum Impuls",
+							"data"			: [
+								// Apa itu momentum dan impuls
+								{
+									"sub_chapter_id"	: 2.1,
+									"sub_chapter_name"	: "Mengenal momentum dan impuls",
+									"sub_chapter_status": 1,
+									"sub_chapter_type"	: 0 // 0 berarti hanya penjelasan
+								},
+								// Bagaimana momentum bekerja
+								{
+									"sub_chapter_id"	: 2.2,
+									"sub_chapter_name"	: "Bagaimana Momentum bekerja",
+									"sub_chapter_status": 1,
+									"sub_chapter_type"	: 0
+								},
+								// Bagaimana impuls bekerja
+								{
+									"sub_chapter_id"	: 2.3,
+									"sub_chapter_name"	: "Bagaimana Impuls bekerja",
+									"sub_chapter_status": 1,
+									"sub_chapter_type"	: 0
+								},
+								// Soal-soal
+								{
+									"sub_chapter_id"	: 2.4,
+									"sub_chapter_name"	: "Bagaimana Impuls bekerja",
+									"sub_chapter_status": 0, // 0 berarti belum selesai
+									"sub_chapter_type"	: 1, // 1 berarti soal-latihan, 1 => ada field data, !1 => tidak ada field data
+									"data"				: [
+										// Jawaban 1
+										{
+											"question_answer_id"		: 1,
+											"question_first_answer"		: "20012.212 km/s",
+											"question_first_answer_at"	: "10/10/2015",
+											"question_edit_answer"		: null,
+											"question_edit_answer_at"	: null,
+											"question_answer_status"	: 0 // 0 berarti salah
+										},
+										// Jawaban 2
+										{
+											"question_answer_id"		: 2,
+											"question_first_answer"		: null,
+											"question_first_answer_at"	: null,
+											"question_edit_answer"		: null,
+											"question_edit_answer_at"	: null,
+											"question_answer_status"	: null
+										},
+										// Jawaban 3
+										{
+											"question_answer_id"		: 3,
+											"question_first_answer"		: null,
+											"question_first_answer_at"	: null,
+											"question_edit_answer"		: null,
+											"question_edit_answer_at"	: null,
+											"question_answer_status"	: null
+										},
+										// Jawaban 4
+										{
+											"question_answer_id"		: 4,
+											"question_first_answer"		: null,
+											"question_first_answer_at"	: null,
+											"question_edit_answer"		: null,
+											"question_edit_answer_at"	: null,
+											"question_answer_status"	: null
+										},
+										// Jawaban 5
+										{
+											"question_answer_id"		: 5,
+											"question_first_answer"		: null,
+											"question_first_answer_at"	: null,
+											"question_edit_answer"		: null,
+											"question_edit_answer_at"	: null,
+											"question_answer_status"	: null
+										}
+									]
+								}
+							]
+						} // , dont forget the comma
+						/*
+						 * Another Bab
+						 */
+					]
+				} //, dont forget the comma
+				/* ==============================
+					FISIKA DASAR 1
+				 ================================ */
+			]
+		}
+	]
+}

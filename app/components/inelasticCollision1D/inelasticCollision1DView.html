@@ -1,0 +1,157 @@
+<div class="panel-right" ng-controller="incollsatudController">
+	<header class="page-header">
+	  <!-- BEGIN HEADER INNER -->
+	  <div class="page-header-inner">
+	    <!-- BEGIN HEADER BRAND -->
+	    <div class="page-header-brand" style="width:auto">
+	      <span class="page-logo">
+	    	<span class="app-title"><strong>{{ title }}</strong></span>
+	      </span>
+	    </div>
+	    <!-- END HEADER BRAND -->
+	    <!-- BEGIN TOGGLER QUICK SIDEBAR -->
+	    <a href="#" class="toggler-quick-sidebar">
+	      <i class="glyphicon glyphicon-option-vertical"></i>
+	    </a>
+	    <!-- END TOGGLER QUICK SIDEBAR -->
+	    <!-- BEGIN HEADER MENU -->
+	    <div class="page-header-menu">
+	    	<ul class="nav navbar-nav pull-right">
+		        <li class="dropdown-account">
+					<a ng-click="showSetUp = !showSetUp" class="" aria-haspopup="true" aria-expanded="false">
+						<i class="lnr lnr-cog fa-spin icon-username"></i>
+						<span class="username">Options &nbsp;<i class="fa fa-angle-down"></i></span>
+					</a>
+		        </li>
+		    </ul>
+	    </div>
+	    <!-- END HEADER MENU -->
+	    <div class="play-stop-state">
+		   	<button class="btn btn-rounded btn-dark" ng-click="restartAnim()">Reset</button>
+		    <button class="btn btn-rounded" ng-click="togglePaused()" ng-class="initial.pauseTicker ? 'btn-success' : 'btn-danger'">{{ initial.pauseTicker ? 'play' : 'pause' }}</button>
+	    </div>
+	  </div>
+	  <!-- END HEADER INNER -->
+	</header>
+	<div class="setting-up-content" ng-class="showSetUp ? 'show-set-up' : ''" slim-scroll>
+<!-- 		<div class="container-fluid">
+			{{ set }}
+			<div>
+				the key {{ set.coba[0].text }} is <input type="text" ng-model="set.coba[0].text" ng-value="{{ set.coba[0].text }}">
+			</div>
+		</div> -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12">				
+					<h3>Train 1 / Lokomotif</h3>
+					<div class="form-group">
+						<div>
+							<div class="btn btn-primary">Mass <span class="badge">{{ initial.train1Mass }} KG</span></div>
+							<div class="btn btn-primary">Vell <span class="badge">{{ initial.train1Vell }} M/S</span></div>
+						</div>
+						<br>
+						<rzslider rz-slider-model="initial.train1Mass" rz-slider-options="train1Mass"></rzslider>
+						<rzslider rz-slider-model="initial.train1Vell" rz-slider-options="train1Vell"></rzslider>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="divider"></div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12">				
+					<h3>Train 2 / Gerbong</h3>
+					<div class="form-group">
+						<div>
+							<div class="btn btn-primary">Mass <span class="badge">{{ initial.train2Mass }} KG</span></div>
+							<div class="btn btn-primary">Vell <span class="badge">{{ initial.train2Vell }} M/S</span></div>
+						</div>
+						<br>
+						<rzslider rz-slider-model="initial.train2Mass" rz-slider-options="train2Mass"></rzslider>
+						<rzslider rz-slider-model="initial.train2Vell" rz-slider-options="train2Vell"></rzslider>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Canvas Here -->
+	<div class="content-container" inelastic-coll-satud>
+		<canvas id="incollsatud" width="811px" height="580px" style="background-color: #AFEAF1;"></canvas>
+		
+		<!-- End of Canvas -->
+		<div class="result-content" ng-class="showResult ? 'show-result' : ''">
+			<a ng-click="showResult = !showResult" class="toggle-show"><i class="lnr" ng-class="showResult ? 'lnr-cross' : 'lnr-upload'"></i></a>
+			<div class="container-fluid">
+				<div class="col-sm-6">
+					<div class="result-text" slim-scroll>
+						<h3>Dialog</h3>
+						<p>Sebuah <strong>Lokomotif</strong> dengan <code>masa: {{ initial.train1Mass }} kg</code> melaju ke arah timur/kanan dengan <code>kec: {{ initial.train1Vell }} m/s</code> kemudian menabrak <strong>Gerbong</strong> dengan <code>masa: {{ initial.train2Mass }} kg</code>. Jika <strong>Gerbong</strong> tersebut sedang dalam kondisi <code>{{ initial.train2Vell == 0 ?  "terdiam dengan kec: 0" : initial.train2Vell > 0 ? "melaju ke timur/kanan dengan kec: " + (initial.train2Vell) : "melaju ke barat/kiri dengan kec: " + (initial.train2Vell * -1) }} m/s</code>.</p>
+
+						<p>Berapa <strong>Momentum Akhir kedua Train</strong>, <strong>Kecepatan Akhir Kedua Train</strong> dan <strong>Ke arah mana Train akan melaju</strong>?</p>
+
+						<p><strong>Diketahui:</strong><br>
+							<code>M<sub>1</sub>: {{ initial.train1Mass }} kg</code> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <code>M<sub>2</sub>: {{ initial.train2Mass }} kg</code>
+							<br>
+							<code>V<sub>1</sub>: {{ initial.train1Vell }} m/s</code> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <code>V<sub>2</sub>: {{ initial.train2Vell }} m/s</code>
+						</p>
+
+						<p><strong>Ditanya:</strong><br>
+							1. <code>P<sub>12</sub>'</code>
+							<br>
+							2. <code>V<sub>12</sub>'</code>
+							<br>
+							3. <code>direction?</code>
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="result-text" slim-scroll data-slim-scroll-init="1">
+						<h3>Jawab</h3>
+						<p>
+							1. Gunakan Rumus kekekalan momentum<br>
+							<ol type="A">
+								<!-- ;angkah 1 -->
+								<li><small>Langkah 1 - Tulis Rumusnya</small><br>
+									<code>M<sub>1</sub> . V<sub>1</sub> + M<sub>2</sub> . V<sub>2</sub> = M<sub>1</sub> . V<sub>1</sub> + M<sub>2</sub> . V<sub>2</sub></code>
+								</li>
+								<!-- langkah 2 -->
+								<li><small>Langkah 2 - Buatlah agar mudah dibaca</small><br>
+									<code>{{ initial.train1Mass }} . {{ initial.train1Vell }} + {{ initial.train2Mass }} . {{ initial.train2Vell }} = {{ initial.train1Mass }} . {{ initial.train1Vell }} + {{ initial.train2Mass }} . {{ initial.train2Vell }}</code>
+								</li>
+								<!-- langkah 3 -->
+								<li><small>Langkah 3 - Hitung yang sebelah kiri!</small><br>
+									<code>P<sub>1</sub>: {{ (initial.train1Mass * initial.train1Vell) + (initial.train2Mass * initial.train2Vell) }} kg m/s = {{ initial.train1Mass }} . {{ initial.train1Vell }} + {{ initial.train2Mass }} . {{ initial.train2Vell }}</code>
+								</li>
+								<!-- langkah 4 -->
+								<li><small>Langkah 4 - Hitung yang sebelah kanan juga!</small><br>
+									<code>P<sub>1</sub>: {{ (initial.train1Mass * initial.train1Vell) + (initial.train2Mass * initial.train2Vell) }} kg m/s = P<sub>2</sub>: {{ (initial.train1Mass * initial.train1Vell) + (initial.train2Mass * initial.train2Vell) }} kg m/s</code>
+								</li>
+							</ol>
+							2. Gunakan Rumus kekekalan momentusm<br>
+							<ol type="A">
+								<!-- langkah 1 -->
+								<li><small>Langkah 1 - Tulis rumusnya</small><br>
+									<code>M<sub>1</sub> . V<sub>1</sub> + M<sub>2</sub> . V<sub>2</sub> = (M<sub>1</sub> + M<sub>2</sub>) . V<sub>12</sub>'</code>
+								</li>
+								<!-- langkah 2 -->
+								<li><small>Langkah 2 - Masukan nangkanya</small><br>
+									<code>{{ initial.train1Mass }} . {{ initial.train2Vell }} + {{ initial.train2Mass }} . {{ initial.train2Vell }} = ({{ initial.train1Mass }} + {{ initial.train2Mass }}) . V<sub>12</sub>'</code>
+								</li>
+								<!-- langkah 3 -->
+								<li><small>Langkah 3 - hitung</small><br>
+									<code>{{ (initial.train1Mass * initial.train1Vell) + (initial.train2Mass * initial.train2Vell) }} = ({{ initial.train1Mass + initial.train2Mass }}) . V<sub>12</sub>'</code>
+								</li>
+								<!-- langkah 4 -->
+								<li><small>Langkah 4 - hasil kiri dibagi total masa</small><br>
+									<code>{{ ((initial.train1Mass * initial.train1Vell) + (initial.train2Mass * initial.train2Vell)) / (initial.train1Mass + initial.train2Mass) }} m/s</code>
+								</li>
+							</ol>
+							3. Jadi kedua Train akan <strong>{{ result == 0 ? 'diam dan kecepatan akhirnya adalah 0' : result < 0 ? 'melaju kearah barat dengan kecepatan ' + result : 'melaju kearah timur dengan kecepatan ' + result }} m/s</strong><br>
+							<br>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

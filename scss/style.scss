@@ -1,0 +1,28 @@
+/* 
+ * Application name: FisikaOne
+ * App URL: -
+ * Description: FisikaOne adalah project tugas fisika untuk membuat sebuah applikasi yang dapat digunakan sebagai alat bantu dalam pengajaran fisika
+ * Author: TeamOne
+ * Author URL: -
+ * Version: 1.0.0
+ * Website: -
+ * Tags: Phisic, Easy, TeamOne, UIKA, Fisika, FT, Teknik
+ */
+
+/* ==========================================================================
+   PRE-PROCESS
+========================================================================== */ 
+@import 'compass/css3';
+@import '_modules/colors';
+@import '_modules/media-queries';
+@import '_modules/general.scss';
+
+/* ==========================================================================
+   GENERAL
+========================================================================== */ 
+@import '_partials/general';
+
+/* ==========================================================================
+   NAVIGATION
+========================================================================== */
+@import '_partials/navigation';

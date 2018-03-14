@@ -1,0 +1,1193 @@
+/* 
+ * Application name: FisikaOne
+ * App URL: -
+ * Description: FisikaOne adalah project tugas fisika untuk membuat sebuah applikasi yang dapat digunakan sebagai alat bantu dalam pengajaran fisika
+ * Author: TeamOne
+ * Author URL: -
+ * Version: 1.0.0
+ * Website: -
+ * Tags: Phisic, Easy, TeamOne, UIKA, Fisika, FT, Teknik
+ */
+/* ==========================================================================
+   PRE-PROCESS
+========================================================================== */
+/*
+ * Colors Module
+ * --------------------------------------- 
+ * This Module contain variables to use as 
+ * 
+ */
+/*
+ * Main Colors 
+ * This color scheme make the ux balance.
+ */
+/* 
+ * Social Media Colors
+ * Link: https://www.competethemes.com/social-media-colors/
+ */
+/* 
+ * Class for Main Colors
+ */
+/* line 77, ../../scss/_modules/colors.scss */
+.text-white {
+  color: #ffffff;
+}
+
+/* line 80, ../../scss/_modules/colors.scss */
+.bg-white {
+  background-color: #ffffff;
+}
+
+/* line 85, ../../scss/_modules/colors.scss */
+.text-dark {
+  color: #495c72;
+}
+
+/* line 88, ../../scss/_modules/colors.scss */
+.bg-dark {
+  background-color: #495c72;
+}
+
+/* line 93, ../../scss/_modules/colors.scss */
+.text-dark-2x {
+  color: #3f4f62;
+}
+
+/* line 96, ../../scss/_modules/colors.scss */
+.bg-dark-2x {
+  background-color: #3f4f62;
+}
+
+/* line 101, ../../scss/_modules/colors.scss */
+.text-dark-3x {
+  color: #364150;
+}
+
+/* line 104, ../../scss/_modules/colors.scss */
+.bg-dark-3x {
+  background-color: #364150;
+}
+
+/* line 109, ../../scss/_modules/colors.scss */
+.text-dark-4x {
+  color: #2B3643;
+}
+
+/* line 112, ../../scss/_modules/colors.scss */
+.bg-dark-4x {
+  background-color: #2B3643;
+}
+
+/* line 117, ../../scss/_modules/colors.scss */
+.text-dark-5x {
+  color: #212933;
+}
+
+/* line 120, ../../scss/_modules/colors.scss */
+.bg-dark-5x {
+  background-color: #212933;
+}
+
+/* line 125, ../../scss/_modules/colors.scss */
+.text-dark-6x {
+  color: #171d24;
+}
+
+/* line 128, ../../scss/_modules/colors.scss */
+.bg-dark-6x {
+  background-color: #171d24;
+}
+
+/* line 133, ../../scss/_modules/colors.scss */
+.text-light {
+  color: #f8fafd;
+}
+
+/* line 136, ../../scss/_modules/colors.scss */
+.bg-light {
+  background-color: #f8fafd;
+}
+
+/* line 141, ../../scss/_modules/colors.scss */
+.text-light-2x {
+  color: #f0f3f4;
+}
+
+/* line 144, ../../scss/_modules/colors.scss */
+.bg-light-2x {
+  background-color: #f0f3f4;
+}
+
+/* line 149, ../../scss/_modules/colors.scss */
+.text-light-3x {
+  color: #e5e9ec;
+}
+
+/* line 152, ../../scss/_modules/colors.scss */
+.bg-light-3x {
+  background-color: #e5e9ec;
+}
+
+/* line 157, ../../scss/_modules/colors.scss */
+.text-light-4x {
+  color: #dadfe4;
+}
+
+/* line 160, ../../scss/_modules/colors.scss */
+.bg-light-4x {
+  background-color: #dadfe4;
+}
+
+/* line 165, ../../scss/_modules/colors.scss */
+.text-light-5x {
+  color: #ced6db;
+}
+
+/* line 168, ../../scss/_modules/colors.scss */
+.bg-light-5x {
+  background-color: #ced6db;
+}
+
+/* line 173, ../../scss/_modules/colors.scss */
+.text-light-6x {
+  color: #c3ccd3;
+}
+
+/* line 176, ../../scss/_modules/colors.scss */
+.bg-light-6x {
+  background-color: #c3ccd3;
+}
+
+/* line 181, ../../scss/_modules/colors.scss */
+.text-gray {
+  color: #a6aebc;
+}
+
+/* line 184, ../../scss/_modules/colors.scss */
+.bg-gray {
+  background-color: #a6aebc;
+}
+
+/* line 189, ../../scss/_modules/colors.scss */
+.text-gray-2x {
+  color: #9ba4b3;
+}
+
+/* line 192, ../../scss/_modules/colors.scss */
+.bg-gray-2x {
+  background-color: #9ba4b3;
+}
+
+/* line 197, ../../scss/_modules/colors.scss */
+.text-gray-3x {
+  color: #8f9aab;
+}
+
+/* line 200, ../../scss/_modules/colors.scss */
+.bg-gray-3x {
+  background-color: #8f9aab;
+}
+
+/* line 205, ../../scss/_modules/colors.scss */
+.text-gray-4x {
+  color: #8490a2;
+}
+
+/* line 208, ../../scss/_modules/colors.scss */
+.bg-gray-4x {
+  background-color: #8490a2;
+}
+
+/* line 213, ../../scss/_modules/colors.scss */
+.text-gray-5x {
+  color: #79869a;
+}
+
+/* line 216, ../../scss/_modules/colors.scss */
+.bg-gray-5x {
+  background-color: #79869a;
+}
+
+/* line 221, ../../scss/_modules/colors.scss */
+.text-gray-6x {
+  color: #6e7c92;
+}
+
+/* line 224, ../../scss/_modules/colors.scss */
+.bg-gray-6x {
+  background-color: #6e7c92;
+}
+
+/* line 229, ../../scss/_modules/colors.scss */
+.text-black {
+  color: #666666;
+}
+
+/* line 232, ../../scss/_modules/colors.scss */
+.bg-black {
+  background-color: #666666;
+}
+
+/* line 237, ../../scss/_modules/colors.scss */
+.text-black-2x {
+  color: #333333;
+}
+
+/* line 240, ../../scss/_modules/colors.scss */
+.bg-black-2x {
+  background-color: #333333;
+}
+
+/* line 245, ../../scss/_modules/colors.scss */
+.text-red {
+  color: #f35958;
+}
+
+/* line 248, ../../scss/_modules/colors.scss */
+.bg-red {
+  background-color: #f35958;
+}
+
+/* line 253, ../../scss/_modules/colors.scss */
+.text-red-2x {
+  color: #f14140;
+}
+
+/* line 256, ../../scss/_modules/colors.scss */
+.bg-red-2x {
+  background-color: #f14140;
+}
+
+/* line 261, ../../scss/_modules/colors.scss */
+.text-green {
+  color: #44B6AE;
+}
+
+/* line 264, ../../scss/_modules/colors.scss */
+.bg-green {
+  background-color: #44B6AE;
+}
+
+/* line 269, ../../scss/_modules/colors.scss */
+.text-green-2x {
+  color: #3EA7A0;
+}
+
+/* line 272, ../../scss/_modules/colors.scss */
+.bg-green-2x {
+  background-color: #3EA7A0;
+}
+
+/* line 277, ../../scss/_modules/colors.scss */
+.text-blue {
+  color: #0090d9;
+}
+
+/* line 280, ../../scss/_modules/colors.scss */
+.bg-blue {
+  background-color: #0090d9;
+}
+
+/* line 285, ../../scss/_modules/colors.scss */
+.text-blue-2x {
+  color: #007fc0;
+}
+
+/* line 288, ../../scss/_modules/colors.scss */
+.bg-blue-2x {
+  background-color: #007fc0;
+}
+
+/* line 293, ../../scss/_modules/colors.scss */
+.text-blue-sky {
+  color: #00c6d9;
+}
+
+/* line 296, ../../scss/_modules/colors.scss */
+.bg-blue-sky {
+  background-color: #00c6d9;
+}
+
+/* line 301, ../../scss/_modules/colors.scss */
+.text-blue-sky-2x {
+  color: #00afc0;
+}
+
+/* line 304, ../../scss/_modules/colors.scss */
+.bg-blue-sky-2x {
+  background-color: #00afc0;
+}
+
+/* line 309, ../../scss/_modules/colors.scss */
+.text-purple {
+  color: #8775a7;
+}
+
+/* line 312, ../../scss/_modules/colors.scss */
+.bg-purple {
+  background-color: #8775a7;
+}
+
+/* line 317, ../../scss/_modules/colors.scss */
+.text-purple-2x {
+  color: #79659d;
+}
+
+/* line 320, ../../scss/_modules/colors.scss */
+.bg-purple-2x {
+  background-color: #79659d;
+}
+
+/* line 325, ../../scss/_modules/colors.scss */
+.text-yellow {
+  color: #f9ba46;
+}
+
+/* line 328, ../../scss/_modules/colors.scss */
+.bg-yellow {
+  background-color: #f9ba46;
+}
+
+/* line 333, ../../scss/_modules/colors.scss */
+.text-yellow-2x {
+  color: #f8b12d;
+}
+
+/* line 336, ../../scss/_modules/colors.scss */
+.bg-yellow-2x {
+  background-color: #f8b12d;
+}
+
+/* line 341, ../../scss/_modules/colors.scss */
+.text-orange {
+  color: #ff5722;
+}
+
+/* line 344, ../../scss/_modules/colors.scss */
+.bg-orange {
+  background-color: #ff5722;
+}
+
+/* line 349, ../../scss/_modules/colors.scss */
+.text-orange-2x {
+  color: #ff4408;
+}
+
+/* line 352, ../../scss/_modules/colors.scss */
+.bg-orange-2x {
+  background-color: #ff4408;
+}
+
+/* 
+ * Override Bootstrap colors
+ */
+/* line 360, ../../scss/_modules/colors.scss */
+.text-primary {
+  color: #0090d9;
+}
+
+/* line 363, ../../scss/_modules/colors.scss */
+.bg-primary {
+  background-color: #0090d9;
+}
+
+/* line 367, ../../scss/_modules/colors.scss */
+.text-success {
+  color: #44B6AE;
+}
+
+/* line 370, ../../scss/_modules/colors.scss */
+.bg-success {
+  background-color: #44B6AE;
+}
+
+/* line 374, ../../scss/_modules/colors.scss */
+.text-info {
+  color: #00c6d9;
+}
+
+/* line 377, ../../scss/_modules/colors.scss */
+.bg-info {
+  background-color: #00c6d9;
+}
+
+/* line 381, ../../scss/_modules/colors.scss */
+.text-warning {
+  color: #f9ba46;
+}
+
+/* line 384, ../../scss/_modules/colors.scss */
+.bg-warning {
+  background-color: #f9ba46;
+}
+
+/* line 388, ../../scss/_modules/colors.scss */
+.text-danger {
+  color: #f35958;
+}
+
+/* line 391, ../../scss/_modules/colors.scss */
+.bg-danger {
+  background-color: #f35958;
+}
+
+/*
+ * Media Queries Module
+ * --------------------------------------- 
+ * This Module contain mixin for Responsive Layout
+ *  
+ * link: http://davidwalsh.name/write-media-queries-sass
+ */
+/* ==========================================================================
+   GENERAL
+========================================================================== */
+/*
+ *	Selection
+ */
+/* line 5, ../../scss/_partials/general.scss */
+::-moz-selection {
+  color: #ffffff;
+  background: #f35958;
+}
+
+/* line 10, ../../scss/_partials/general.scss */
+::-webkit-selection {
+  color: #ffffff;
+  background: #f35958;
+}
+
+/* line 15, ../../scss/_partials/general.scss */
+::-ms-selection {
+  color: #ffffff;
+  background: #f35958;
+}
+
+/* line 20, ../../scss/_partials/general.scss */
+::selection {
+  color: #ffffff;
+  background: #f35958;
+}
+
+/*
+ * General 
+ */
+/* line 29, ../../scss/_partials/general.scss */
+html {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 34, ../../scss/_partials/general.scss */
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-family: Open Sans, Sans-serif, Arial;
+  font-size: 14px;
+  background-color: #dadfe4;
+  color: #727272;
+}
+
+/* line 46, ../../scss/_partials/general.scss */
+.list-group > a {
+  font-weight: normal;
+  font-size: 13px;
+}
+
+/*
+ * Define Typogrphy 
+ */
+/* line 56, ../../scss/_partials/general.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: #495c72;
+}
+
+/* line 66, ../../scss/_partials/general.scss */
+h1 {
+  font-size: 22px;
+}
+
+/* line 70, ../../scss/_partials/general.scss */
+h2 {
+  font-size: 19px;
+}
+
+/* line 74, ../../scss/_partials/general.scss */
+h3 {
+  font-size: 17px;
+}
+
+/* line 78, ../../scss/_partials/general.scss */
+h4 {
+  font-size: 14px;
+}
+
+/* line 82, ../../scss/_partials/general.scss */
+h5 {
+  font-size: 12px;
+}
+
+/* line 86, ../../scss/_partials/general.scss */
+h6 {
+  font-size: 10px;
+}
+
+/* 
+ * Define Link
+ */
+/* line 94, ../../scss/_partials/general.scss */
+a {
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: #44B6AE;
+}
+/* line 98, ../../scss/_partials/general.scss */
+a:hover, a:focus {
+  color: #3EA7A0;
+  outline: 0;
+}
+/* line 104, ../../scss/_partials/general.scss */
+a.disabled {
+  pointer-events: none;
+  cursor: crosshair;
+}
+
+/* 
+ * Define Form
+ */
+/* line 114, ../../scss/_partials/general.scss */
+.input-group-biggest {
+  margin-top: 10px;
+}
+/* line 117, ../../scss/_partials/general.scss */
+.input-group-biggest .form-control {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  height: 60px;
+  font-size: 20px !important;
+  font-weight: 300;
+  line-height: 22px !important;
+  padding: 18px 20px;
+  border-color: #ffffff;
+  line-height: 22px;
+}
+/* line 128, ../../scss/_partials/general.scss */
+.input-group-biggest .input-group-btn {
+  -moz-border-radius: 0 5px 5px 0;
+  -webkit-border-radius: 0;
+  border-radius: 0 5px 5px 0;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+/* line 136, ../../scss/_partials/general.scss */
+.input-group-biggest .btn-biggest {
+  height: 60px;
+  font-weight: 700;
+}
+
+/* line 142, ../../scss/_partials/general.scss */
+.form-control-2x {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  height: 46px;
+  padding: 14px 10px 13px;
+  margin-bottom: 5px;
+}
+/* line 149, ../../scss/_partials/general.scss */
+.form-control-2x:focus {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #44B6AE;
+}
+
+/* line 155, ../../scss/_partials/general.scss */
+.form-control-ghost {
+  height: 50px;
+  padding: 14px 10px 13px;
+  background-color: transparent;
+  border-color: #2B3643;
+}
+/* line 161, ../../scss/_partials/general.scss */
+.form-control-ghost:focus {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #44B6AE;
+}
+
+/* 
+ * Define Button
+ */
+/* line 171, ../../scss/_partials/general.scss */
+.btn {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  position: relative;
+  border: 0;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #fff;
+  border: 2px solid transparent;
+}
+/* line 181, ../../scss/_partials/general.scss */
+.btn:focus, .btn:hover {
+  color: #fff;
+  text-transform: uppercase;
+}
+/* line 187, ../../scss/_partials/general.scss */
+.btn.btn-rounded {
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+/* line 191, ../../scss/_partials/general.scss */
+.btn.btn-2x {
+  font-size: 14px;
+  font-weight: 300;
+  padding: 14px 28px 13px;
+  line-height: 15px;
+  margin-right: 20px;
+}
+/* line 199, ../../scss/_partials/general.scss */
+.btn.btn-dark {
+  background-color: #2B3643;
+  border-color: #2B3643;
+}
+/* line 203, ../../scss/_partials/general.scss */
+.btn.btn-dark:hover, .btn.btn-dark:focus {
+  background-color: #3f4f62;
+  border-color: #3f4f62;
+}
+/* line 209, ../../scss/_partials/general.scss */
+.btn.btn-dark.disable {
+  background-color: #495c72;
+  border-color: #495c72;
+}
+/* line 215, ../../scss/_partials/general.scss */
+.btn.btn-primary {
+  background-color: #0090d9;
+  border-color: #0090d9;
+}
+/* line 219, ../../scss/_partials/general.scss */
+.btn.btn-primary:hover, .btn.btn-primary:focus {
+  background-color: #007fc0;
+  border-color: #007fc0;
+}
+/* line 226, ../../scss/_partials/general.scss */
+.btn.btn-success {
+  background-color: #44B6AE;
+  border-color: #44B6AE;
+}
+/* line 230, ../../scss/_partials/general.scss */
+.btn.btn-success:hover, .btn.btn-success:focus {
+  background-color: #3EA7A0;
+  border-color: #3EA7A0;
+}
+/* line 237, ../../scss/_partials/general.scss */
+.btn.btn-info {
+  background-color: #00c6d9;
+  border-color: #00c6d9;
+}
+/* line 241, ../../scss/_partials/general.scss */
+.btn.btn-info:hover, .btn.btn-info:focus {
+  background-color: #00afc0;
+  border-color: #00afc0;
+}
+/* line 248, ../../scss/_partials/general.scss */
+.btn.btn-warning {
+  background-color: #f9ba46;
+  border-color: #f9ba46;
+}
+/* line 252, ../../scss/_partials/general.scss */
+.btn.btn-warning:hover, .btn.btn-warning:focus {
+  background-color: #f8b12d;
+  border-color: #f8b12d;
+}
+/* line 259, ../../scss/_partials/general.scss */
+.btn.btn-danger {
+  background-color: #f35958;
+  border-color: #f35958;
+}
+/* line 263, ../../scss/_partials/general.scss */
+.btn.btn-danger:hover, .btn.btn-danger:focus {
+  background-color: #f14140;
+  border-color: #f14140;
+}
+/* line 270, ../../scss/_partials/general.scss */
+.btn.btn-extra {
+  background-color: #ff5722;
+  border-color: #ff5722;
+}
+/* line 274, ../../scss/_partials/general.scss */
+.btn.btn-extra:hover, .btn.btn-extra:focus {
+  background-color: #ff4408;
+  border-color: #ff4408;
+}
+
+/* 
+ * Define Helper
+ */
+/* line 286, ../../scss/_partials/general.scss */
+.overlay {
+  height: 100%;
+  display: block;
+  background: rgba(39, 44, 63, 0.9);
+}
+
+/* line 292, ../../scss/_partials/general.scss */
+.overlay-screen {
+  display: block;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* line 297, ../../scss/_partials/general.scss */
+.wrap-lg {
+  padding: 120px 0;
+}
+
+/* line 301, ../../scss/_partials/general.scss */
+.wrap-md {
+  padding: 80px 0;
+}
+
+/* line 305, ../../scss/_partials/general.scss */
+.wrap-sm {
+  padding: 60px 0;
+}
+
+/* line 309, ../../scss/_partials/general.scss */
+.wrap-xs {
+  padding: 40px 0;
+}
+
+/* line 313, ../../scss/_partials/general.scss */
+.top-lg {
+  padding-top: 120px;
+}
+
+/* line 317, ../../scss/_partials/general.scss */
+.top-md {
+  padding-top: 80px;
+}
+
+/* line 321, ../../scss/_partials/general.scss */
+.top-sm {
+  padding-top: 60px;
+}
+
+/* line 325, ../../scss/_partials/general.scss */
+.top-xs {
+  padding-top: 40px;
+}
+
+/* line 329, ../../scss/_partials/general.scss */
+.bottom-lg {
+  padding-bottom: 120px;
+}
+
+/* line 333, ../../scss/_partials/general.scss */
+.bottom-md {
+  padding-bottom: 80px;
+}
+
+/* line 337, ../../scss/_partials/general.scss */
+.bottom-sm {
+  padding-bottom: 60px;
+}
+
+/* line 341, ../../scss/_partials/general.scss */
+.bottom-xs {
+  padding-bottom: 40px;
+}
+
+/* line 345, ../../scss/_partials/general.scss */
+.material {
+  -moz-box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.08);
+}
+
+/* line 349, ../../scss/_partials/general.scss */
+.no-margin {
+  margin: 0 !important;
+}
+
+/* line 353, ../../scss/_partials/general.scss */
+.no-padding {
+  padding: 0 !important;
+}
+
+/* line 357, ../../scss/_partials/general.scss */
+.hold-down-35 {
+  margin-bottom: -35px;
+  z-index: 9;
+}
+@media (max-width: 767px) {
+  /* line 357, ../../scss/_partials/general.scss */
+  .hold-down-35 {
+    margin-bottom: 0;
+  }
+}
+
+/* 
+ * Bootstrap Override
+ */
+/* line 369, ../../scss/_partials/general.scss */
+.tooltip-inner {
+  padding: 5px 8px;
+  color: #f8fafd;
+  background-color: #495c72;
+  border-radius: 2px;
+}
+
+/* line 376, ../../scss/_partials/general.scss */
+.tooltip.left .tooltip-arrow,
+.tooltip.top .tooltip-arrow,
+.tooltip.top-left .tooltip-arrow,
+.tooltip.top-right .tooltip-arrow,
+.tooltip.right .tooltip-arrow,
+.tooltip.left .tooltip-arrow,
+.tooltip.bottom .tooltip-arrow,
+.tooltip.bottom-left .tooltip-arrow,
+.tooltip.bottom-right .tooltip-arrow {
+  border-left-color: #495c72;
+}
+
+/* Auth Tab */
+/* line 392, ../../scss/_partials/general.scss */
+.auth-tab-nav li > a {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  color: #364150;
+}
+/* line 399, ../../scss/_partials/general.scss */
+.auth-tab-nav li.active > a {
+  color: #364150;
+}
+
+/* line 404, ../../scss/_partials/general.scss */
+.auth-tab-content {
+  background-color: #ffffff;
+  padding: 10px 15px 20px;
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
+  border-color: #DDD;
+}
+/* line 411, ../../scss/_partials/general.scss */
+.auth-tab-content p {
+  font-size: 14px !important;
+  margin: 15px 0;
+  margin-bottom: 8px !important;
+  font-weight: 400;
+}
+
+/* line 419, ../../scss/_partials/general.scss */
+h3.sign-in-title {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #364150;
+}
+
+/* ==========================================================================
+   NAVIGATION
+========================================================================== */
+/* ==========================================================================
+   MAIN NAVIGATION
+========================================================================== */
+/* line 5, ../../scss/_partials/navigation.scss */
+.page-header,
+.page-sidebar-wrapper,
+.page-content-wrapper {
+  -moz-transition: margin 0.2s;
+  -o-transition: margin 0.2s;
+  -webkit-transition: margin 0.2s;
+  transition: margin 0.2s;
+}
+
+/* line 11, ../../scss/_partials/navigation.scss */
+.page-container {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 17, ../../scss/_partials/navigation.scss */
+.page-header {
+  border-width: 0;
+  border-style: solid;
+  border-color: #000000;
+  padding: 0;
+  margin: 0;
+  height: 60px;
+  min-height: 60px;
+  background-color: #f0f3f4;
+}
+/* line 25, ../../scss/_partials/navigation.scss */
+.page-header .page-header-brand {
+  width: 200px;
+  height: 60px;
+  max-height: 60px;
+  float: left;
+  		/* .navigation-toggler {
+  			width: 56px;
+  			height: 46px;
+  			background-color: $dark-5x;
+  			display: inline-block;
+  			float: left;
+  		}
+  
+  		.navigation-toggler:hover {
+  			background-color: $dark-6x;
+  		}
+  
+  		.toggle {
+  			position: absolute;
+  			left: 18px;
+  			line-height: 46px;
+  			font-size: 13pt;
+  			color: $gray-3x;
+  			z-index: 99;
+  		} */
+}
+/* line 52, ../../scss/_partials/navigation.scss */
+.page-header .page-header-brand .page-logo {
+  float: left;
+  display: inline-block;
+  padding: 0 30px;
+}
+/* line 58, ../../scss/_partials/navigation.scss */
+.page-header .page-header-brand .app-title {
+  text-transform: uppercase;
+  line-height: 60px;
+  font-size: 14px;
+  color: #2B3643;
+}
+/* line 65, ../../scss/_partials/navigation.scss */
+.page-header .page-header-brand .app-title .skin {
+  animation: logoAnimation 10s infinite;
+}
+
+/* line 71, ../../scss/_partials/navigation.scss */
+.page-header .page-header-menu {
+  float: right;
+  padding: 0;
+}
+@media (max-width: 767px) {
+  /* line 75, ../../scss/_partials/navigation.scss */
+  .page-header .page-header-menu .navbar-nav {
+    margin: 0 !important;
+  }
+}
+/* line 81, ../../scss/_partials/navigation.scss */
+.page-header .page-header-menu .navbar-nav > li {
+  padding: 0 4px;
+  margin-right: 0;
+  height: 60px;
+}
+@media (max-width: 767px) {
+  /* line 81, ../../scss/_partials/navigation.scss */
+  .page-header .page-header-menu .navbar-nav > li {
+    float: left;
+  }
+}
+/* line 89, ../../scss/_partials/navigation.scss */
+.page-header .page-header-menu .navbar-nav > li > a {
+  padding: 0;
+  font-size: 19px;
+  font-weight: 300;
+  color: #8f9aab;
+}
+/* line 96, ../../scss/_partials/navigation.scss */
+.page-header .page-header-menu .navbar-nav > li > a:hover,
+.page-header .page-header-menu .navbar-nav > li > a:active,
+.page-header .page-header-menu .navbar-nav > li > a:visited,
+.page-header .page-header-menu .navbar-nav > li > a:focus {
+  background-color: #364150;
+}
+/* line 103, ../../scss/_partials/navigation.scss */
+.page-header .page-header-menu .navbar-nav > li > a > .notif-badge {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  position: absolute;
+  top: 12px;
+  right: 0px;
+  padding: 0 6px;
+  line-height: 18px;
+  font-size: 13px;
+  color: #f8fafd;
+  background-color: #44B6AE;
+}
+/* line 115, ../../scss/_partials/navigation.scss */
+.page-header .page-header-menu .navbar-nav > li.dropdown-notification > a, .page-header .page-header-menu .navbar-nav > li.dropdown-message > a, .page-header .page-header-menu .navbar-nav > li.dropdown-task > a {
+  padding: 21px 12px 18px;
+}
+/* line 121, ../../scss/_partials/navigation.scss */
+.page-header .page-header-menu .navbar-nav > li.dropdown-account > a {
+  padding: 16px 12px 15px;
+  background-color: #e5e9ec;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  /* line 121, ../../scss/_partials/navigation.scss */
+  .page-header .page-header-menu .navbar-nav > li.dropdown-account > a {
+    background-color: #364150;
+  }
+}
+/* line 130, ../../scss/_partials/navigation.scss */
+.page-header .page-header-menu .navbar-nav > li .img-username {
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  display: table-cell;
+  width: 29px;
+  height: 29px;
+}
+/* line 137, ../../scss/_partials/navigation.scss */
+.page-header .page-header-menu .navbar-nav > li .icon-username {
+  display: table-cell;
+  font-size: 29px;
+  margin-right: 5px;
+}
+/* line 143, ../../scss/_partials/navigation.scss */
+.page-header .page-header-menu .navbar-nav > li .username {
+  display: table-cell;
+  padding-left: 5px;
+  vertical-align: middle;
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+/* line 153, ../../scss/_partials/navigation.scss */
+.page-header .toggler-quick-sidebar {
+  float: right;
+  padding: 19px 10px 19px 6px;
+  font-size: 15px;
+  color: #8f9aab;
+}
+/* line 159, ../../scss/_partials/navigation.scss */
+.page-header .toggler-quick-sidebar:hover {
+  background-color: transparent;
+  color: #44B6AE;
+}
+
+@-moz-keyframes logoAnimation {
+  0% {
+    color: #f35958;
+  }
+  10% {
+    color: #ff5722;
+  }
+  20% {
+    color: #f9ba46;
+  }
+  30% {
+    color: #44B6AE;
+  }
+  40% {
+    color: #0090d9;
+  }
+  50% {
+    color: #8775a7;
+  }
+  60% {
+    color: #0090d9;
+  }
+  70% {
+    color: #44B6AE;
+  }
+  80% {
+    color: #f9ba46;
+  }
+  90% {
+    color: #ff5722;
+  }
+}
+@-webkit-keyframes logoAnimation {
+  0% {
+    color: #f35958;
+  }
+  10% {
+    color: #ff5722;
+  }
+  20% {
+    color: #f9ba46;
+  }
+  30% {
+    color: #44B6AE;
+  }
+  40% {
+    color: #0090d9;
+  }
+  50% {
+    color: #8775a7;
+  }
+  60% {
+    color: #0090d9;
+  }
+  70% {
+    color: #44B6AE;
+  }
+  80% {
+    color: #f9ba46;
+  }
+  90% {
+    color: #ff5722;
+  }
+}
+@keyframes logoAnimation {
+  0% {
+    color: #f35958;
+  }
+  10% {
+    color: #ff5722;
+  }
+  20% {
+    color: #f9ba46;
+  }
+  30% {
+    color: #44B6AE;
+  }
+  40% {
+    color: #0090d9;
+  }
+  50% {
+    color: #8775a7;
+  }
+  60% {
+    color: #0090d9;
+  }
+  70% {
+    color: #44B6AE;
+  }
+  80% {
+    color: #f9ba46;
+  }
+  90% {
+    color: #ff5722;
+  }
+}

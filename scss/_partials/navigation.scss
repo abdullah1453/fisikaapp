@@ -1,0 +1,176 @@
+/* ==========================================================================
+   MAIN NAVIGATION
+========================================================================== */
+
+.page-header,
+.page-sidebar-wrapper,
+.page-content-wrapper {
+	@include transition( margin .2s );
+}
+
+.page-container {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.page-header {
+	@include borders( 0 );
+	padding: 0;
+	margin: 0;
+	height: 60px;
+	min-height: 60px;
+	background-color: $light-2x;
+
+	.page-header-brand {
+		width: 200px;
+		height: 60px;
+		max-height: 60px;
+		float: left;
+
+		/* .navigation-toggler {
+			width: 56px;
+			height: 46px;
+			background-color: $dark-5x;
+			display: inline-block;
+			float: left;
+		}
+
+		.navigation-toggler:hover {
+			background-color: $dark-6x;
+		}
+
+		.toggle {
+			position: absolute;
+			left: 18px;
+			line-height: 46px;
+			font-size: 13pt;
+			color: $gray-3x;
+			z-index: 99;
+		} */
+
+		.page-logo {
+			float: left;
+			display: inline-block;
+			padding: 0 30px;
+		}
+
+		.app-title {
+			text-transform: uppercase;
+			line-height: 60px;
+			font-size: 14px;
+			color: $dark-4x;
+		}
+
+		.app-title .skin {
+			animation: logoAnimation 10s infinite;
+		}
+	}
+}
+
+.page-header .page-header-menu {
+	float: right;
+	padding: 0;
+
+	.navbar-nav {
+		@include xs-device {
+			margin: 0 !important;
+		}
+	}
+
+	.navbar-nav > li {
+		padding: 0 4px;
+		margin-right: 0;
+		height: 60px;
+		@include xs-device {
+			float: left;
+		}
+
+		> a {
+			padding: 0;
+			font-size: 19px;
+			font-weight: 300;
+			color: $gray-3x;
+		}
+
+		> a:hover,
+		> a:active,
+		> a:visited,
+		> a:focus {
+			background-color: $dark-3x;
+		}
+
+		> a > .notif-badge {
+			@include border-radius( 3px );
+			position: absolute;
+			top: 12px;
+			right: 0px;
+			padding: 0 6px;
+			line-height: 18px;
+			font-size: 13px;
+			color: $light;
+			background-color: $green;
+		}
+
+		&.dropdown-notification > a,
+		&.dropdown-message > a,
+		&.dropdown-task > a {
+			padding: 21px 12px 18px;
+		}
+
+		&.dropdown-account > a {
+			@include xs-device {
+				background-color: $dark-3x;
+			}
+			padding: 16px 12px 15px;
+			background-color: $light-3x;
+			cursor: pointer;
+		}
+
+		.img-username {
+			@include border-radius( 100% );
+			display: table-cell;
+			width: 29px;
+			height: 29px;
+		}
+
+		.icon-username {
+			display: table-cell;
+			font-size: 29px;
+			margin-right: 5px;
+		}
+
+		.username {
+			display: table-cell;
+			padding-left: 5px;
+			vertical-align: middle;
+			font-size: 12px;
+			font-weight: lighter;
+		}
+	}
+}
+
+.page-header .toggler-quick-sidebar {
+	float: right;
+	padding: 19px 10px 19px 6px;
+	font-size: 15px;
+	color: $gray-3x;
+
+	&:hover {
+		background-color: transparent;
+		color: $green;
+	}
+}
+
+@include keyframes(logoAnimation) {
+	0% { color: $red; }
+	10% { color: $orange; }
+	20% { color: $yellow; }
+	30% { color: $green; }
+	40% { color: $blue; }
+	50% { color: $purple; }
+	60% { color: $blue; }
+	70% { color: $green; }
+	80% { color: $yellow; }
+	90% { color: $orange; }
+}

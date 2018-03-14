@@ -1,0 +1,118 @@
+{
+	"users"	: [
+		{
+			"id" 				: 111122,
+			"username"			: "julia14",
+			"password"			: "123456",
+			"first_name"		: "julia",
+			"last_name"			: "makudiva",
+			"last_course"		: "10/11/2015",
+			"complete_course" 	: [
+				{
+					"id"			: 1,
+					"name"			: "english grammar",
+					"complete_at"	: "10/12/2015",
+					"last_seen_at"	: "10/12/2015"
+				}
+			],
+			"uncomplete_coures" : [
+				{
+					"id"			: 2,
+					"name"			: "fisika 1",
+					"complete_at" 	: null,
+					"last_seen_at"	: "25/11/2015",
+					"data"			: [
+						{
+							"chapter_id" 	: 1,
+							"chapter_name" 	: "Pengenalan",
+							"data"		 	: [
+								{
+									"sub_chapter_id" 	: 1.1,
+									"sub_chapter_name" 	: "presentation",
+									"sub_chapter_status": 1
+								},
+								{
+									"sub_chapter_id" 	: 1.2,
+									"sub_chapter_name" 	: "Impementaasi",
+									"sub_chapter_status": 1
+								}
+							]
+						},
+						{
+							"chapter_id"	: 2,
+							"chapter_name"	: "Momentum Impuls",
+							"data"			: [
+								{
+									"sub_chapter_id"	: 2.1,
+									"sub_chapter_name"	: "Mengenal momentum dan impuls",
+									"sub_chapter_status": 1,
+									"sub_chapter_type"	: 0
+								},
+								{
+									"sub_chapter_id"	: 2.2,
+									"sub_chapter_name"	: "Bagaimana Momentum bekerja",
+									"sub_chapter_status": 1,
+									"sub_chapter_type"	: 0
+								},
+								{
+									"sub_chapter_id"	: 2.3,
+									"sub_chapter_name"	: "Bagaimana Impuls bekerja",
+									"sub_chapter_status": 1,
+									"sub_chapter_type"	: 0
+								},
+								{
+									"sub_chapter_id"	: 2.4,
+									"sub_chapter_name"	: "Bagaimana Impuls bekerja",
+									"sub_chapter_status": 0, 
+									"sub_chapter_type"	: 1,
+									"data"				: [
+										{
+											"question_answer_id"		: 1,
+											"question_first_answer"		: "20012.212 km/s",
+											"question_first_answer_at"	: "10/10/2015",
+											"question_edit_answer"		: null,
+											"question_edit_answer_at"	: null,
+											"question_answer_status"	: 0
+										},
+										{
+											"question_answer_id"		: 2,
+											"question_first_answer"		: null,
+											"question_first_answer_at"	: null,
+											"question_edit_answer"		: null,
+											"question_edit_answer_at"	: null,
+											"question_answer_status"	: null
+										},
+										{
+											"question_answer_id"		: 3,
+											"question_first_answer"		: null,
+											"question_first_answer_at"	: null,
+											"question_edit_answer"		: null,
+											"question_edit_answer_at"	: null,
+											"question_answer_status"	: null
+										},
+										{
+											"question_answer_id"		: 4,
+											"question_first_answer"		: null,
+											"question_first_answer_at"	: null,
+											"question_edit_answer"		: null,
+											"question_edit_answer_at"	: null,
+											"question_answer_status"	: null
+										},
+										{
+											"question_answer_id"		: 5,
+											"question_first_answer"		: null,
+											"question_first_answer_at"	: null,
+											"question_edit_answer"		: null,
+											"question_edit_answer_at"	: null,
+											"question_answer_status"	: null
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

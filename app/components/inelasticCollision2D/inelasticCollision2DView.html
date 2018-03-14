@@ -1,0 +1,174 @@
+<div class="panel-right" ng-controller="incollduadController">
+	<header class="page-header">
+	  <!-- BEGIN HEADER INNER -->
+	  <div class="page-header-inner">
+	    <!-- BEGIN HEADER BRAND -->
+	    <div class="page-header-brand" style="width:auto">
+	      <span class="page-logo">
+	    	<span class="app-title"><strong>{{ title }}</strong></span>
+	      </span>
+	    </div>
+	    <!-- END HEADER BRAND -->
+	    <!-- BEGIN TOGGLER QUICK SIDEBAR -->
+	    <a href="#" class="toggler-quick-sidebar">
+	      <i class="glyphicon glyphicon-option-vertical"></i>
+	    </a>
+	    <!-- END TOGGLER QUICK SIDEBAR -->
+	    <!-- BEGIN HEADER MENU -->
+	    <div class="page-header-menu">
+	    	<ul class="nav navbar-nav pull-right">
+		        <li class="dropdown-account">
+					<a ng-click="showSetUp = !showSetUp" class="" aria-haspopup="true" aria-expanded="false">
+						<i class="lnr lnr-cog fa-spin icon-username"></i>
+						<span class="username">Options &nbsp;<i class="fa fa-angle-down"></i></span>
+					</a>
+		        </li>
+		    </ul>
+	    </div>
+	    <!-- END HEADER MENU -->
+	    <div class="play-stop-state">
+		   	<button class="btn btn-rounded btn-dark" ng-click="restartAnim()">Reset</button>
+		    <button class="btn btn-rounded" ng-click="togglePaused()" ng-class="pauseTicker ? 'btn-success' : 'btn-danger'">{{ pauseTicker ? 'play' : 'pause' }}</button>
+	    </div>
+	  </div>
+	  <!-- END HEADER INNER -->
+	</header>
+	<div class="setting-up-content" ng-class="showSetUp ? 'show-set-up' : ''" slim-scroll>
+<!-- 		<div class="container-fluid">
+			{{ set }}
+			<div>
+				the key {{ set.coba[0].text }} is <input type="text" ng-model="set.coba[0].text" ng-value="{{ set.coba[0].text }}">
+			</div>
+		</div> -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12">				
+					<h3>Rocket Red / Vertical</h3>
+					<div class="form-group">
+						<div>
+							<div class="btn btn-primary">Mass <span class="badge">{{ initial.rocketRMass }} KG</span></div>
+							<div class="btn btn-primary">Vell <span class="badge">{{ initial.rocketRVell }} M/S</span></div>
+						</div>
+						<br>
+						<rzslider rz-slider-model="initial.rocketRMass" rz-slider-options="rocketRMass"></rzslider>
+						<rzslider rz-slider-model="initial.rocketRVell" rz-slider-options="rocketRVell"></rzslider>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="divider"></div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12">				
+					<h3>Rocket Blue / Horizontal</h3>
+					<div class="form-group">
+						<div>
+							<div class="btn btn-primary">Mass <span class="badge">{{ initial.rocketBMass }} KG</span></div>
+							<div class="btn btn-primary">Vell <span class="badge">{{ initial.rocketBVell }} M/S</span></div>
+						</div>
+						<br>
+						<rzslider rz-slider-model="initial.rocketBMass" rz-slider-options="rocketBMass"></rzslider>
+						<rzslider rz-slider-model="initial.rocketBVell" rz-slider-options="rocketBVell"></rzslider>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Canvas Here -->
+	<div class="content-container" inelastic-coll-duad>
+		<canvas id="incollduad" width="811px" height="580px"></canvas>
+		
+		<!-- End of Canvas -->
+		<div class="result-content" ng-class="showResult ? 'show-result' : ''">
+			<a ng-click="showResult = !showResult" class="toggle-show"><i class="lnr" ng-class="showResult ? 'lnr-cross' : 'lnr-upload'"></i></a>
+			<div class="container-fluid">
+				<div class="col-sm-6">
+					<div class="result-text" slim-scroll>
+						<h3>Dialog</h3>
+						<p>Sebuah <strong>Roket Merah</strong> dengan <code>masa: {{ initial.rocketRMass }} kg</code> melaju ke arah utara/atas dengan <code>kec: {{ initial.rocketRVell }} m/s</code> kemudian menabrak <strong>Roket Biru</strong> yang sedang melaju kearah timur/kanan dengan <code>masa: {{ initial.rocketBMass }} kg</code> dan <code>kec: {{ initial.rocketBVell }} m/s</code>.</p>
+
+						<p>Berapa <strong>Momentum Akhir kedua Roket</strong>, <strong>Kecepatan Akhir Kedua Roket</strong> dan <strong>Kearah mana kedua roket itu terpelanting setelah tabrakan?</strong>?</p>
+
+						<p><strong>Diketahui:</strong><br>
+							<code>M<sub>1</sub>: {{ initial.rocketRMass }} kg</code> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <code>M<sub>2</sub>: {{ initial.rocketBMass }} kg</code>
+							<br>
+							<code>V<sub>1</sub>: {{ initial.rocketRVell }} m/s</code> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <code>V<sub>2</sub>: {{ initial.rocketBVell }} m/s</code>
+						</p>
+
+						<p><strong>Ditanya:</strong><br>
+							1. <code>P<sub>12</sub>'</code>
+							<br>
+							2. <code>V<sub>12</sub>'</code>
+							<br>
+							3. <code>direction?</code>
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="result-text" slim-scroll data-slim-scroll-init="1">
+						<h3>Jawab</h3>
+						<p>
+							1. Gunakan Rumus kekekalan momentum<br>
+							<ol type="A">
+								<!-- ;angkah 1 -->
+								<li><small>Langkah 1 - Tulis Rumusnya</small><br>
+									<code>M<sub>1</sub> . V<sub>1</sub> + M<sub>2</sub> . V<sub>2</sub> = M<sub>1</sub> . V<sub>1</sub> + M<sub>2</sub> . V<sub>2</sub></code>
+								</li>
+								<!-- langkah 2 -->
+								<li><small>Langkah 2 - Buatlah agar mudah dibaca</small><br>
+									<code>{{ initial.rocketRMass }} . {{ initial.rocketRVell }} + {{ initial.rocketBMass }} . {{ initial.rocketBVell }} = {{ initial.rocketRMass }} . {{ initial.rocketRVell }} + {{ initial.rocketBMass }} . {{ initial.rocketBVell }}</code>
+								</li>
+								<!-- langkah 3 -->
+								<li><small>Langkah 3 - Hitung yang sebelah kiri!</small><br>
+									<code>P<sub>1</sub>: {{ (initial.rocketRMass * initial.rocketRVell) + (initial.rocketBMass * initial.rocketBVell) }} kg m/s = {{ initial.rocketRMass }} . {{ initial.rocketRVell }} + {{ initial.rocketBMass }} . {{ initial.rocketBVell }}</code>
+								</li>
+								<!-- langkah 4 -->
+								<li><small>Langkah 4 - Hitung yang sebelah kanan juga!</small><br>
+									<code>P<sub>1</sub>: {{ (initial.rocketRMass * initial.rocketRVell) + (initial.rocketBMass * initial.rocketBVell) }} kg m/s = P<sub>2</sub>: {{ (initial.rocketRMass * initial.rocketRVell) + (initial.rocketBMass * initial.rocketBVell) }} kg m/s</code>
+								</li>
+							</ol>
+							2. Gunakan Rumus momentum total dibagi massa total<br>
+							<ol type="A">
+								<!-- langkah 1 -->
+								<li><small>Langkah 1 - Tulis rumusnya</small><br>
+									<code>V<sub>12</sub>' = &#8730;(P<sub>1</sub><sup>2</sup> + P<sub>2</sub><sup>2</sup>) / (m<sub>1</sub> + m<sub>2</sub>)</code>
+								</li>
+								<!-- langkah 2 -->
+								<li><small>Langkah 2 - Masukan nangkanya</small><br>
+									<code>V<sub>12</sub>' = &#8730;({{ initial.rocketRMass * initial.rocketRVell }}<sup>2</sup> + {{ initial.rocketBMass * initial.rocketBVell }}<sup>2</sup>) / ({{ initial.rocketRMass }} + {{ initial.rocketBMass }})</code>
+								</li>
+								<!-- langkah 3 -->
+								<li><small>Langkah 3 - Hitung</small><br>
+									<code>V<sub>12</sub>' = &#8730;({{ (initial.rocketRMass * initial.rocketRVell) * (initial.rocketRMass * initial.rocketRVell) }} + {{ (initial.rocketBMass * initial.rocketBVell) * (initial.rocketBMass * initial.rocketBVell) }}) / ({{ initial.rocketRMass + initial.rocketBMass }}) m/s</code>
+								</li>
+								<!-- langkah 4 -->
+								<li><small>Langkah 4 - Hasil</small><br>
+									<code>V<sub>12</sub>' = {{ Math.sqrt((((initial.rocketRMass * initial.rocketRVell) * (initial.rocketRMass * initial.rocketRVell)) + ((initial.rocketBMass * initial.rocketBVell) * (initial.rocketBMass * initial.rocketBVell)))) / (initial.rocketRMass + initial.rocketBMass) }} m/s</code>
+								</li>
+							</ol>
+							3. Gunakan rumus inverse tangent<br>
+							<ol type="A">
+								<!-- langkah 1 -->
+								<li>langkah 1 - Tulis rumusnya <br>
+									<code>tan<sup>-1</sup>(P<sub>y</sub> / P<sub>x</sub>)</code>
+								</li>
+								<!-- langkah 2 -->
+								<li>langkah 2 - Masukan nilainya<br>
+									<code>X = tan<sup>-1</sup>({{ initial.rocketRMass * initial.rocketRVell }} / {{ initial.rocketBMass * initial.rocketBVell }})</code>
+								</li>
+								<!-- langkah 3 -->
+								<li>langkah 3 - Hitung<br>
+									<code>X = tan<sup>-1</sup>({{ (initial.rocketRMass * initial.rocketRVell) / (initial.rocketBMass * initial.rocketBVell) }})</code>
+								</li>
+								<!-- langkah 4 -->
+								<li>langkah 4 - Hasil</li>
+								<code>X = {{ toDegree(Math.atan((initial.rocketRMass * initial.rocketRVell) / (initial.rocketBMass * initial.rocketBVell))) }} <sup>o</sup></code>
+							</ol>
+							<br>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

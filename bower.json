@@ -1,0 +1,19 @@
+{
+  "name": "fisika",
+  "version": "1.0.0",
+  "authors": [
+    "Cecep Fateeh <abdullah.alfatih1453@gmail.com>"
+  ],
+  "description": "We built this app to make another people learn about",
+  "main": "index.html",
+  "keywords": [
+    "physic",
+    "free",
+    "apps",
+    "phisic",
+    "fisika",
+    "momentum",
+    "impuls"
+  ],
+  "license": "MIT"
+}
